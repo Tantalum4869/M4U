@@ -99,7 +99,7 @@
                   
                   <div class="card-deck">
                         <div class="card">
-                          <img src="img\bank\bank1.jpg" class="card-img-top" alt="...">
+                          <img src="img\bankk\bank1.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">ธนาคาร กรุงไทย</h5>
                             <p class="card-text">ชื่อบัญชี :</p>
@@ -107,7 +107,7 @@
                           
                         </div>
                         <div class="card">
-                          <img src="img\bank\bank2.jpg" class="card-img-top" alt="...">
+                          <img src="img\bankk\bank2.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">ธนาคาร กสิกรไทย</h5>
                             <p class="card-text">ชื่อบัญชี :</p>
@@ -115,7 +115,7 @@
                           
                         </div>
                         <div class="card">
-                          <img src="img\bank\bank3.jpg" class="card-img-top" alt="...">
+                          <img src="img\bankk\bank3.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">ธนาคาร กรุงเทพ</h5>
                             <p class="card-text">ชื่อบัญชี :</p>

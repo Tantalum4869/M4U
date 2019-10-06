@@ -1,7 +1,11 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 //fetch.php
 $connect = mysqli_connect("localhost", "root", "123456789", "e-commerce");
- session_start();
+
+
+ session_start(); 
+
 if($_SESSION['UserID']!=""){
 	if($_SESSION['status']=="ADMIN"){
 		 $hid = "false";
@@ -13,7 +17,39 @@ if(isset($_POST["query"]))
 {
  $search = mysqli_real_escape_string($connect, $_POST["query"]);
  $query = "
-  SELECT * FROM polo 
+ SELECT * FROM polo
+ WHERE Name LIKE '%".$search."%'
+ OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM hat
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM apron
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+  UNION
+  SELECT *  FROM jacket
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM pants
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+  UNION
+  SELECT *  FROM sport
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM suits
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+  UNION
+  SELECT *  FROM tshirt
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM umbrella 
   WHERE Name LIKE '%".$search."%'
   OR Color LIKE '%".$search."%' 
   
@@ -23,7 +59,24 @@ if(isset($_POST["query"]))
 else
 {
  $query = "
-  SELECT * FROM polo  ORDER BY Name
+ SELECT * FROM polo
+UNION
+ SELECT *  FROM hat
+UNION
+ SELECT *  FROM apron
+ UNION
+ SELECT *  FROM jacket
+UNION
+ SELECT *  FROM pants
+ UNION
+ SELECT *  FROM sport
+UNION
+ SELECT *  FROM suits
+ UNION
+ SELECT *  FROM tshirt
+UNION
+ SELECT *  FROM umbrella
+ 
  ";
 }
 $result = mysqli_query($connect, $query);
@@ -59,6 +112,7 @@ if(mysqli_num_rows($result) > 0)
 					 '<button type="button" class="btn btn-info"   data-toggle="modal" data-target="#myModal'.
 	  				$row['ID'].'"> ดูรายละเอียดเพิ่มเติม </button> '.
 					 '<button type="button" style="width:120px;" class="btn btn-danger" onclick="window.location.href=\'productEdit.php?TId='.$row['ID'].' \'" id="btnEdit" '.$hid.' >Edit</button>'.
+					'<br /><button type="button" style="width:160px;" class="btn btn-danger" onclick="window.location.href=\'delete_edit_action.php?TId='.$row['ID'].' \'" id="btndelete" '.$hid.' >Delete</button>'.
 				'</div>
 			</div>'.
 			'<div id="myModal'.$row['ID'].'" class="modal fade bd-example-modal-xl" role="dialog" >'.

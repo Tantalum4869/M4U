@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+﻿<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,14 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Home-หน้าแรก</title>
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link href="css/all.css" rel="stylesheet" type="text/css">
-  <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <style type="text/css">
@@ -363,31 +359,31 @@
         
         <div class="card-deck" >
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top" id="zoom"  alt="...">
+              <img src="img\product\1.jpg" class="card-img-top"  alt="...">
               <div class="card-body">
                 <h5 class="card-title">เสื้อโปโล</h5>  
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top" id="zoom"  alt="...">
+              <img src="img\product\1.jpg" class="card-img-top"   alt="...">
               <div class="card-body">
                 <h5 class="card-title">เสื้อยืด</h5>
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top"id="zoom"  alt="...">
+              <img src="img\product\1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">เสื้อเจ็คเก็ต</h5>
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-                <img src="img\product\1.jpg" class="card-img-top"id="zoom"  alt="...">
+                <img src="img\product\1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">เสื้อสูท</h5>
                 </div>
               </div>
               <div class="card" style="width: 12rem;">
-                  <img src="img\product\1.jpg" class="card-img-top"  id="zoom" alt="...">
+                  <img src="img\product\1.jpg" class="card-img-top"  alt="...">
                   <div class="card-body">
                     <h5 class="card-title">หมวก</h5>
                   </div>
@@ -402,13 +398,8 @@
       </section>
       <!--Section: Main info-->
 		
-      <hr class="my-5">
-      <main>
-      <div class="container">
-          <h2 class="h2 mb-2"><strong>ชนิดผ้า</strong></h2><br>
-          
-        </div>
-      </main>
+      
+      
       <main>
       <hr class="mb-5">
         <h2 class="h2 mb-2"><strong>ไซต์เสื้อ</strong></h2><br>
@@ -416,7 +407,7 @@
           <div class="row">
           <div class="col-sm-6">
         <div class="card bg-dark text-white">
-          <img src="img/size1.jpg" id="zoom"class="card-img" alt="...">
+          <img src="img/size1.jpg" class="card-img" alt="...">
           
         </div>
         </div>
@@ -424,7 +415,7 @@
       
           <div class="col-sm-6">
         <div class="card bg-dark text-white">
-          <img src="img/size2.jpg" id="zoom" class="card-img" alt="...">
+          <img src="img/size2.jpg" class="card-img" alt="...">
           
         </div>
         </div>
