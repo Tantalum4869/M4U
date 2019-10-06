@@ -147,7 +147,7 @@
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
                 <h1 class="mb-4">
-                  <strong>ติดต่อเรา<br></strong>CONTRACT
+                  <strong>ติดต่อเรา<br></strong>CONTACT
                 </h1>
 
               </div>
@@ -168,7 +168,7 @@
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
                 <h1 class="mb-4">
-                  <strong>ติดต่อเรา<br></strong>CONTRACT
+                  <strong>ติดต่อเรา<br></strong>CONTACT
                 </h1>
 
               </div>
@@ -189,7 +189,7 @@
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
                 <h1 class="mb-4">
-                  <strong>ติดต่อเรา<br></strong>CONTRACT
+                  <strong>ติดต่อเรา<br></strong>CONTACT
                 </h1>
               </div>
               <!-- Content -->
