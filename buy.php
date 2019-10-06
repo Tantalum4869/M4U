@@ -80,8 +80,181 @@
       </section>
       
       <!--Section: Main info-->
+			<!-- Grid row -->
+			<div class="row">
 
-             <br>
+			  <!-- Grid column -->
+			  <div class="col-lg-4 col-md-12">
+
+				<!--Card-->
+				<div class="card">
+
+				  <!--Card image-->
+				  <div class="view">
+					<img src="img/step/step1.jpg" class="card-img-top" alt="photo">
+					<a href="#">
+					  <div class="mask rgba-white-slight"></div>
+					</a>
+				  </div>
+
+				  <!--Card content-->
+				  <div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">ติดต่อร้านค้า</h4>
+					<!--Text-->
+					<p class="card-text">ติดต่อทางร้านค้าเพื่อสอบถามข้อมูลเพิ่มเติม ไม่ว่าจะเป็น ประเภทสินค้า ราคา ชนิดผ้า เพื่อประกอบการตัดสินใจ</p>
+				  </div>
+
+				</div>
+				<!--/.Card-->
+			  </div>
+			  <!-- Grid column -->
+
+			  <!-- Grid column -->
+			  <div class="col-lg-4 col-md-12">
+
+				<!--Card-->
+				<div class="card">
+
+				  <!--Card image-->
+				  <div class="view">
+					<img src="img/step/step2.jpg" class="card-img-top" alt="photo">
+					<a href="#">
+					  <div class="mask rgba-white-slight"></div>
+					</a>
+				  </div>
+
+				  <!--Card content-->
+				  <div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">ออกแบบเสื้อ/โลโก้</h4>
+					<!--Text-->
+					<p class="card-text">หากลูกค้ามีแบบที่ต้องการอยู่แล้วสามารถส่งให้ทางร้านได้เลยแต่ถ้ายังไม่มีแบบในใจ ทางร้านมีบริการออกแบบสินค้าและโลโก้ให้ด้วย</p>
+				  </div>
+
+				</div>
+				<!--/.Card-->
+			  </div>
+			  <!-- Grid column -->
+				
+			  <!-- Grid column -->
+			  <div class="col-lg-4 col-md-12">
+
+				<!--Card-->
+				<div class="card">
+
+				  <!--Card image-->
+				  <div class="view">
+					<img src="img/step/step3.jpg" class="card-img-top" alt="photo">
+					<a href="#">
+					  <div class="mask rgba-white-slight"></div>
+					</a>
+				  </div>
+
+				  <!--Card content-->
+				  <div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">รับใบเสนอราคา</h4>
+					<!--Text-->
+					<p class="card-text">ทางร้านจะส่งรายละเอียดสินค้าพร้อมทั้งใบเสนอราคาให้ลูกค้า <br> <strong style="color: red">*ราคาขึ้นอยู่กับปริมาณและการตกลงระหว่างเรา</strong></p>
+				  </div>
+
+				</div>
+				<!--/.Card-->
+			  </div>
+			  <!-- Grid column -->
+						
+			</div>
+			<!-- Grid row -->
+		<br>
+			<!-- Grid row -->
+			<div class="row">
+
+			  <!-- Grid column -->
+			  <div class="col-lg-4 col-md-12">
+
+				<!--Card-->
+				<div class="card">
+
+				  <!--Card image-->
+				  <div class="view">
+					<img src="img/step/step4.jpg" class="card-img-top" alt="photo">
+					<a href="#">
+					  <div class="mask rgba-white-slight"></div>
+					</a>
+				  </div>
+
+				  <!--Card content-->
+				  <div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">วางมัดจำเพื่อยืนยันการผลิต</h4>
+					<!--Text-->
+					<p class="card-text">ลูกค้าจำเป็นต้องวางเงินมัดจำ 50% เพื่อให้ทางร้านจัดทำเสื้อเพื่อเป็นตัวอย่างก่อนสั่งผลิต<br><br></p>
+				  </div>
+
+				</div>
+				<!--/.Card-->
+			  </div>
+			  <!-- Grid column -->
+
+			  <!-- Grid column -->
+			  <div class="col-lg-4 col-md-12">
+
+				<!--Card-->
+				<div class="card">
+
+				  <!--Card image-->
+				  <div class="view">
+					<img src="img/step/step5.jpg" class="card-img-top" alt="photo">
+					<a href="#">
+					  <div class="mask rgba-white-slight"></div>
+					</a>
+				  </div>
+
+				  <!--Card content-->
+				  <div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">รับตัวอย่างเสื้อและตรวจสอบ</h4>
+					<!--Text-->
+					<p class="card-text">รับเสื้อตัวอย่างจากที่ออกแบบไว้ โดยสามารถมารับเองหรือให้เราไปส่งให้ถึงที่เพื่อปรับหรือแก้ไขส่วนที่ต้องการแล้วทำการยืนยันเพื่อผลิตสินค้าจริง</p>
+				  </div>
+
+				</div>
+				<!--/.Card-->
+			  </div>
+			  <!-- Grid column -->
+				
+			  <!-- Grid column -->
+			  <div class="col-lg-4 col-md-12">
+
+				<!--Card-->
+				<div class="card">
+
+				  <!--Card image-->
+				  <div class="view">
+					<img src="img/step/step6.jpg" class="card-img-top" alt="photo">
+					<a href="#">
+					  <div class="mask rgba-white-slight"></div>
+					</a>
+				  </div>
+
+				  <!--Card content-->
+				  <div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">ชำระเงินและจัดส่งสินค้า</h4>
+					<!--Text-->
+					<p class="card-text">เมื่อร้านผลิตสินค้าครบตามจำนวนแล้วจะแจ้งให้ลูกค้าโอนเงินส่วนที่เหลือแล้วทางร้านก็จะจัดส่งสินค้าให้เลย<br><br></p>
+				  </div>
+
+				</div>
+				<!--/.Card-->
+			  </div>
+			  <!-- Grid column -->
+					
+			</div>
+			<!-- Grid row -->
+		<center><h3 class="card-text"><br>ทางร้านของเรายินดีให้บริการทุกท่าน ติดต่อเรา</h3></center>
+              <hr class="my-5">
              <main>
                     <div class="container">
                         <h2 class="h2 mb-2"><strong>ช่องทางการชำระเงิน</strong></h2><br>
