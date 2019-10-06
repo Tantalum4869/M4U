@@ -2,7 +2,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="index.php" target="_blank">
+      <a class="navbar-brand" href="index.php">
         <strong>M4U</strong>
       </a>
 
