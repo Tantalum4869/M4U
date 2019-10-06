@@ -59,8 +59,8 @@
 						<td width="70px"><b>จำนวนเงิน<br>Amount</b></td>
 					</tr>
 					<!---------------ดึงค่ามาจากฟอร์ม--------------->
-					<tr align="center" valign="middle" height="40px">
-						<td width="30px"><?php echo $_POST['item1'];?></td>
+					<tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description1'] != ""){echo $_POST['item1'];} ?></td>
 						<td width="200px"><?php echo $_POST['description1']; ?></td>	
 						<td width="50px"><?php echo $_POST['quantity1']; ?></td>
 						<td width="50px"><?php echo $_POST['price1']; ?></td>
@@ -69,8 +69,8 @@
 												else{echo $Total1 = $_POST['quantity1'] * $_POST['price1'];}
 										 ?></td>
 					</tr>
-					<tr align="center" valign="middle" height="40px">
-						<td width="30px"><?php echo $_POST['item2'];?></td>
+					<tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description2'] != ""){echo $_POST['item2'];} ?></td>
 						<td width="200px"><?php echo $_POST['description2']; ?></td>	
 						<td width="50px"><?php echo $_POST['quantity2']; ?></td>
 						<td width="50px"><?php echo $_POST['price2']; ?></td>
@@ -79,8 +79,8 @@
 												else{echo $Total2 = $_POST['quantity2'] * $_POST['price2'];}
 										 ?></td>
 					</tr>
-					<tr align="center" valign="middle" height="40px">
-						<td width="30px"><?php echo $_POST['item3'];?></td>
+					<tr align="center" valign="middle" height="25px">
+                    	<td width="30px"><?php if($_POST['description3'] != ""){echo $_POST['item3'];} ?></td>
 						<td width="200px"><?php echo $_POST['description3']; ?></td>	
 						<td width="50px"><?php echo $_POST['quantity3']; ?></td>
 						<td width="50px"><?php echo $_POST['price3']; ?></td>
@@ -89,8 +89,8 @@
 												else{echo $Total3 = $_POST['quantity3'] * $_POST['price3'];}
 										 ?></td>
 					</tr>
-					<tr align="center" valign="middle" height="40px">
-						<td width="30px"><?php echo $_POST['item4'];?></td>
+					<tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description4'] != ""){echo $_POST['item4'];} ?></td>
 						<td width="200px"><?php echo $_POST['description4']; ?></td>	
 						<td width="50px"><?php echo $_POST['quantity4']; ?></td>
 						<td width="50px"><?php echo $_POST['price4']; ?></td>
@@ -99,8 +99,8 @@
 												else{echo $Total4 = $_POST['quantity4'] * $_POST['price4'];}
 										 ?></td>
 					</tr>
-					<tr align="center" valign="middle" height="40px">
-						<td width="30px"><?php echo $_POST['item5'];?></td>
+					<tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description5'] != ""){echo $_POST['item5'];} ?></td>
 						<td width="200px"><?php echo $_POST['description5']; ?></td>	
 						<td width="50px"><?php echo $_POST['quantity5']; ?></td>
 						<td width="50px"><?php echo $_POST['price5']; ?></td>
@@ -109,19 +109,105 @@
 												else{echo $Total5 = $_POST['quantity5'] * $_POST['price5'];}
 										 ?></td>
 					</tr>
-					<?php 										//---------------------คิดยอดรวมราคา---------------------
-									$Total = $Total1+$Total2;?>
-					<tr align="center" valign="middle" height="100px">
-						<td colspan="2">
-						
-								<?php
+                    
+                    <tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description6'] != ""){echo $_POST['item6'];} ?></td>
+						<td width="200px"><?php echo $_POST['description6']; ?></td>	
+						<td width="50px"><?php echo $_POST['quantity6']; ?></td>
+						<td width="50px"><?php echo $_POST['price6']; ?></td>
+						<td width="70px"><?php if($_POST['quantity6'] == "" || $_POST['price6'] == "") 
+												{echo(" ");}
+												else{echo $Total6 = $_POST['quantity6'] * $_POST['price6'];}
+										 ?></td>
+					</tr>
+                    
+                    <tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description7'] != ""){echo $_POST['item7'];} ?></td>
+						<td width="200px"><?php echo $_POST['description7']; ?></td>	
+						<td width="50px"><?php echo $_POST['quantity7']; ?></td>
+						<td width="50px"><?php echo $_POST['price7']; ?></td>
+						<td width="70px"><?php if($_POST['quantity7'] == "" || $_POST['price7'] == "") 
+												{echo(" ");}
+												else{echo $Total7 = $_POST['quantity5'] * $_POST['price5'];}
+										 ?></td>
+					</tr>
+                    
+                    <tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description8'] != ""){echo $_POST['item8'];} ?></td>
+						<td width="200px"><?php echo $_POST['description8']; ?></td>	
+						<td width="50px"><?php echo $_POST['quantity8']; ?></td>
+						<td width="50px"><?php echo $_POST['price8']; ?></td>
+						<td width="70px"><?php if($_POST['quantity8'] == "" || $_POST['price8'] == "") 
+												{echo(" ");}
+												else{echo $Total8 = $_POST['quantity8'] * $_POST['price8'];}
+										 ?></td>
+					</tr>
+                    
+                    <tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description9'] != ""){echo $_POST['item9'];} ?></td>
+						<td width="200px"><?php echo $_POST['description9']; ?></td>	
+						<td width="50px"><?php echo $_POST['quantity9']; ?></td>
+						<td width="50px"><?php echo $_POST['price9']; ?></td>
+						<td width="70px"><?php if($_POST['quantity9'] == "" || $_POST['price9'] == "") 
+												{echo(" ");}
+												else{echo $Total9 = $_POST['quantity9'] * $_POST['price9'];}
+										 ?></td>
+					</tr>
+                    
+                    <tr align="center" valign="middle" height="25px">
+						<td width="30px"><?php if($_POST['description10'] != ""){echo $_POST['item10'];} ?></td>
+						<td width="200px"><?php echo $_POST['description10']; ?></td>	
+						<td width="50px"><?php echo $_POST['quantity10']; ?></td>
+						<td width="50px"><?php echo $_POST['price10']; ?></td>
+						<td width="70px"><?php if($_POST['quantity10'] == "" || $_POST['price10'] == "") 
+												{echo(" ");}
+												else{echo $Total10 = $_POST['quantity10'] * $_POST['price10'];}
+										 ?></td>
+					</tr>
+                    
+								
+							<?php  //---------------------ไม่คิดค่า VAT 7 %---------------------
+								if($_POST['VAT7%'] == "")  {	
+												//-------คิดยอดรวมราคา--------
+									$Total = $Total1+$Total2+$Total3+$Total4+$Total5+$Total6+$Total7+$Total8+$Total9+$Total10;?>
+									<tr align="center" valign="middle" height="100px">
+									<td colspan="2">
+								<?php     //---------คิดยอดคงเหลือ----------
+									if($_POST['Deposit'] == "30") { $Deposit = $Total *0.3;}
+									else if ($_POST['Deposit'] == "40") { $Deposit = $Total *0.4;}
+									else if ($_POST['Deposit'] == "50") { $Deposit = $Total *0.5;}
+									
+									$Balance = $Total -  $Deposit ;  }
+									$Grang = 0;
+									$Vat = 0; 
+									
+									
+									?>	
+                                    
+                                    
+                                    
+                                    <?php  //---------------------ไม่คิดค่า VAT 7 %---------------------
+								if($_POST['VAT7%'] != "")  {	
+												//-------คิดยอดรวมราคา--------
+									$Total = $Total1+$Total2+$Total3+$Total4+$Total5+$Total6+$Total7+$Total8+$Total9+$Total10;?>
+									<tr align="center" valign="middle" height="100px">
+									<td colspan="2">
+								<?php     
+										//---------Deposit----------
+									if($_POST['Deposit'] == "30") { $Deposit = $Total *0.3;}
+									else if ($_POST['Deposit'] == "40") { $Deposit = $Total *0.4;}
+									else if ($_POST['Deposit'] == "50") { $Deposit = $Total *0.5;}
+											//---------Vat 7 %----------
+									$Vat = $Total * (7/100);
+											//--------- Grang ----------
+									$Grang = $Total + $Vat;
+											//---------คิดยอดคงเหลือ----------
+									$Balance = $Grang -  $Deposit ;  }?>	
 
-							
-										//---------------------คิดยอดคงเหลือ---------------------
-									$Balance = $Total -  $_POST['Deposit'] ;
-							
-							
-										//---------------------แปลงเป็นตัวหนังสือ---------------------
+									
+									
+
+									<?php	//---------------------แปลงเป็นตัวหนังสือ---------------------
 									function bathformat($number) 
 									{
 									  	$numberstr = array('ศูนย์','หนึ่ง','สอง','สาม','สี่','ห้า','หก','เจ็ด','แปด','เก้า','สิบ');
@@ -161,9 +247,9 @@
 						</td>
 						<td>
 							<b><?php echo($Total);?></b><br>
-							<b>0</b><br>
-							<b>0</b><br>
-							<b><?php echo $_POST['Deposit']; ?></b><br>
+							<b><?php echo($Vat);?></b><br>
+							<b><?php echo($Grang);?></b><br>
+							<b><?php echo($Deposit) ?></b><br>
 							<b><?php echo($Balance);?></b>
 						</td>	
 					</tr>

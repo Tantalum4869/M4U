@@ -1,46 +1,34 @@
-<?php session_start(); ?><?
-include('conn.php');
+<?php session_start(); ?>
+<?include('conn.php');
 
  
-	 	$delete ="";
-		$id =$_POST['tid'];
-		
-		
-		switch ($type) {
-			case 1:
-				$w = polo;
-				break;
-			case 2:
-				$w = apron;
-				break;
-			case 3:
-				$w = hat;
-				break;
-			case 4:
-				$w = pants;
-				break;	
-			case 5:
-				$w = sport;
-				break;
-			case 6:
-				$w = suits;
-				break;
-			case 7:
-				$w = tshirt;
-				break;
-			case 8:
-				$w = umbrella;
-				break;
-			case 9:
-				$w = jacket;
-				break;		
-			
-			default:
-				exit;
+		$delete ="";
+		$ID = $_GET['TId'];
+		echo $ID;
+		if($ID >= 8000){
+			$sa = umbrella;
+		}else if($ID >= 7000){
+			$sa = tshirt;
+		}else if($ID >= 6000){
+			$sa = suits;
+		}else if($ID >= 5000){
+			$sa = sport;
+		}else if($ID >= 4000){
+			$sa = pants;
+		}else if($ID >= 3000){
+			$sa = jacket;
+		}else if($ID >= 2000){
+			$sa = apron;
+		}else if($ID >= 1000){
+			$sa = hat;
+		}else if($ID >= 1){
+			$sa = polo;
 		}
-	
-		$delete =" DELETE FROM $w WHERE $w.ID = $id";
+
 		
+		$delete ="DELETE FROM $sa WHERE ID=$ID";
+		
+		echo $delete;
 		
 	
 	$result = mysql_query($delete)or die(mysql_error());
@@ -51,5 +39,5 @@ include('conn.php');
 		echo "<script>alert('delete Failed');</script>";
 	}
 
- }
+ 
 ?>

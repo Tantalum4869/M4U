@@ -1,4 +1,4 @@
-<?php session_start(); ?><!DOCTYPE html>
+﻿<?php session_start(); ?><!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Admin Quotation</title>
@@ -61,7 +61,7 @@
 <?php include_once('header.php'); ?>
   
     <!--Carousel Wrapper-->
-    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carousel-example-1z"  data-ride="carousel">
 
       <!--Indicators-->
       <ol class="carousel-indicators">
@@ -97,7 +97,7 @@
         </div>
 	</div
 	
-	<br><br><br><br>
+	><br><br><br><br>
 	
 	  <!----------------------------- Form ------------------------------>
 	<form action="admin-quotation-print.php" method="post">
@@ -136,40 +136,83 @@
 							<td width="50px"><b>ราคา/หน่วย<br>Price/ Unit</b></td>
 						</tr>
 						<!---------------ดึงค่ามาจากฟอร์ม--------------->
-						<tr align="center" valign="middle" height="60px">
-							<td width="60px"><input type="text" class="input-sm" name="item1" size="2" value="1" ></td>
-							<td width="100px"><input type="text" class="input-sm" name="description1" size="50" placeholder="รายการสินค้า"></td>	
-							<td width="50px"><input type="text" class="input-sm" name="quantity1" placeholder="จำนวนสินค้า"></td>
-							<td width="50px"><input type="text" class="input-sm" name="price1" placeholder="ราคาสินค้า/หน่วย"></td>
+						<tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item1" size="2" value="1" readonly ></td>
+							<td width="100px"><input type="text" class="input-sm" name="description1" size="50" placeholder="รายการสินค้า"></td>
+                           
+							<td width="50px"><input type="text" class="input-sm" name="quantity1" placeholder="จำนวนสินค้า" ></td>
+							<td width="50px"><input type="text" class="input-sm" name="price1" placeholder="ราคาสินค้า/หน่วย" ></td> 
 						</tr>
-						<tr align="center" valign="middle" height="60px">
-							<td width="60px"><input type="text" class="input-sm" name="item2" size="2" value="2" ></td>
+						<tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item2" size="2" value="2" readonly></td>
 							<td width="100px"><input type="text" class="input-sm" name="description2" size="50" placeholder="รายการสินค้า"></td>	
-							<td width="50px"><input type="text" class="input-sm" name="quantity2" placeholder="จำนวนสินค้า"></td>
-							<td width="50px"><input type="text" class="input-sm" name="price2" placeholder="ราคาสินค้า/หน่วย"></td>
+							<td width="50px"><input type="text" class="input-sm" name="quantity2" placeholder="จำนวนสินค้า" ></td>
+							<td width="50px"><input type="text" class="input-sm" name="price2" placeholder="ราคาสินค้า/หน่วย" ></td>
 						</tr>	
-						<tr align="center" valign="middle" height="60px">
-							<td width="60px"><input type="text" class="input-sm" name="item3" size="2" ></td>
+						<tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item3" size="2" value="3" readonly ></td>
 							<td width="100px"><input type="text" class="input-sm" name="description3" size="50" placeholder="รายการสินค้า"></td>	
 							<td width="50px"><input type="text" class="input-sm" name="quantity3" placeholder="จำนวนสินค้า"></td>
 							<td width="50px"><input type="text" class="input-sm" name="price3" placeholder="ราคาสินค้า/หน่วย"></td>
 						</tr>	
-						<tr align="center" valign="middle" height="60px">
-							<td width="60px"><input type="text" class="input-sm" name="item4" size="2" ></td>
+						<tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item4" size="2" value="4" readonly></td>
 							<td width="100px"><input type="text" class="input-sm" name="description4" size="50" placeholder="รายการสินค้า"></td>	
 							<td width="50px"><input type="text" class="input-sm" name="quantity4" placeholder="จำนวนสินค้า"></td>
 							<td width="50px"><input type="text" class="input-sm" name="price4" placeholder="ราคาสินค้า/หน่วย"></td>
 						</tr>	
-						<tr align="center" valign="middle" height="60px">
-							<td width="60px"><input type="text" class="input-sm" name="item5" size="2" ></td>
+						<tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item5" size="2" value="5" readonly ></td>
 							<td width="100px"><input type="text" class="input-sm" name="description5" size="50" placeholder="รายการสินค้า"></td>	
 							<td width="50px"><input type="text" class="input-sm" name="quantity5" placeholder="จำนวนสินค้า"></td>
 							<td width="50px"><input type="text" class="input-sm" name="price5" placeholder="ราคาสินค้า/หน่วย"></td>
 						</tr>	
+                        
+                        
+                        
+                        
+                        <tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item6" size="2" value="6" readonly ></td>
+							<td width="100px"><input type="text" class="input-sm" name="description6" size="50" placeholder="รายการสินค้า"></td>	
+							<td width="50px"><input type="text" class="input-sm" name="quantity6" placeholder="จำนวนสินค้า"></td>
+							<td width="50px"><input type="text" class="input-sm" name="price6" placeholder="ราคาสินค้า/หน่วย"></td>
+						</tr>	
+                        <tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item7" size="2" value="7" readonly ></td>
+							<td width="100px"><input type="text" class="input-sm" name="description7" size="50" placeholder="รายการสินค้า"></td>	
+							<td width="50px"><input type="text" class="input-sm" name="quantity7" placeholder="จำนวนสินค้า"></td>
+							<td width="50px"><input type="text" class="input-sm" name="price7" placeholder="ราคาสินค้า/หน่วย"></td>
+						</tr>	
+                        <tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item8" size="2" value="8" readonly ></td>
+							<td width="100px"><input type="text" class="input-sm" name="description8" size="50" placeholder="รายการสินค้า"></td>	
+							<td width="50px"><input type="text" class="input-sm" name="quantity8" placeholder="จำนวนสินค้า"></td>
+							<td width="50px"><input type="text" class="input-sm" name="price8" placeholder="ราคาสินค้า/หน่วย"></td>
+						</tr>	
+                        <tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item9" size="2" value="9" readonly ></td>
+							<td width="100px"><input type="text" class="input-sm" name="description9" size="50" placeholder="รายการสินค้า"></td>	
+							<td width="50px"><input type="text" class="input-sm" name="quantity9" placeholder="จำนวนสินค้า"></td>
+							<td width="50px"><input type="text" class="input-sm" name="price9" placeholder="ราคาสินค้า/หน่วย"></td>
+						</tr>	
+                        <tr align="center" valign="middle" height="45px">
+							<td width="60px"><input type="text" class="input-sm" name="item10" size="2" value="10" readonly ></td>
+							<td width="100px"><input type="text" class="input-sm" name="description10" size="50" placeholder="รายการสินค้า"></td>	
+							<td width="50px"><input type="text" class="input-sm" name="quantity10" placeholder="จำนวนสินค้า"></td>
+							<td width="50px"><input type="text" class="input-sm" name="price10" placeholder="ราคาสินค้า/หน่วย"></td>
+						</tr>	
 						
 						<tr valign="middle" height="60px">
-							<td colspan="2" style="color: crimson"><b>***หมายเหตุ : </b><input type="text" name="Comment" size="50" class="input-sm"></td>
-							<td colspan="2"><b>มัดจำ (Deposit) : </b><input type="text" name="Deposit" size="25" class="input-sm" value="0"></b></td>
+							<td colspan="2" style="color: crimson"><b>***หมายเหตุ : </b><input type="text" name="Comment" size="40" class="input-sm"></td>
+							<td colspan="2" style="color: crimson"><b>มัดจำ (Deposit) : </b>
+                            	<select class="custom-select-sm" name="Deposit">
+  									 <option value="30">30%</option>
+                                     <option value="40">40%</option>
+                                     <option value="50">50%</option>
+                                </select></b></td>
+						</tr>
+                        <tr valign="middle" height="60px" align="center">
+							<td colspan="4" style="color: crimson"><b>***ออกภาษีมูลค่าเพิ่ม / VAT 7% : </b> <input type="checkbox" name="VAT7%" value="VAT7%"> <br></td>
 						</tr>
 						
 					</table>

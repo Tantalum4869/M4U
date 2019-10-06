@@ -3,11 +3,14 @@ include('conn.php');
 
  if(isset($_POST['Save']))
  {
-	 	$update ="";
-	 	
+	 	$update =""; $delete ="";
+	 	$image = $_FILES['changePic']['name'];
 		$id =$_POST['tid'];
+		$name = $_POST['name'];
+		$des = $_POST['des'];
 		$type = $_POST['type'];
-	
+		$color = $_POST['color'];
+		
 		
 		switch ($type) {
 			case 1:
@@ -48,6 +51,7 @@ include('conn.php');
 		move_uploaded_file($_FILES['changePic']['tmp_name'], $target);
 	
 		$update ="UPDATE $w SET Name='$name',Description='$des',Color='$color',Img='$image' WHERE ID=$id";	
+		
   	}
 	else {
 		$update ="UPDATE $w SET Name='$name',Description='$des',Color='$color' WHERE ID=$id ";

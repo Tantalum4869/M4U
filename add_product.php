@@ -51,25 +51,20 @@ header('Content-Type: text/html; charset=utf-8');
 	}
 
 	
-  	// Get text
-  	// image file directory
-  	$target = "productimg/".basename($image);
 
+  	$target = "productimg/".basename($image);
   	$sql = "INSERT INTO $p (Img, Name , Description ,Color ) VALUES 
 				('$image','$name','$des','$color')";
-  	// execute query
   	mysqli_query($db, $sql);
-
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
   		$msg = "Image uploaded successfully";
   	}else{
   		$msg = "Failed to upload image";
   	}
 	  
-	 echo "<script>alert('เพิ่มข้อมูลสินค้าเสร็จสิ้น');</script>";
-	 
+	  echo "<script>alert('เพิ่มข้อมูลสินค้าเสร็จสิ้น');window.location.href='product.php';</script>";
+	
   }
-
 
 ?>
 
