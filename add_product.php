@@ -205,7 +205,7 @@ header('Content-Type: text/html; charset=utf-8');
 	  <center>
 	เพิ่มข้อมูลสินค้า
 		
-		<table ]  align="center"  >
+		<table  align="center"  >
 		<form name="traineradd" method="post" action="add_product.php" enctype="multipart/form-data"  onSubmit="return validate();">
 					
 					<tr>

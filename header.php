@@ -30,9 +30,6 @@
             <a class="nav-link" href="product.php">สินค้า</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.php">บริการ</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="buy.php">สั่งซื้อ</a>
           </li>
 		<div class="dropdown">
