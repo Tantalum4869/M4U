@@ -42,7 +42,7 @@
 		  <div class="dropdown-menu dropdown-primary">
 			<a class="dropdown-item" href="about1.php">เกี่ยวกับเรา</a>
 			<a class="dropdown-item" href="about2.php">รีวิวจากลูกค้า</a>
-			<a class="dropdown-item" href="q.php">F &amp; A</a>
+			<a class="dropdown-item" href="q.php">คำถามที่พบบ่อย</a>
 		  </div>
 		</div>
 				

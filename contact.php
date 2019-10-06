@@ -80,7 +80,7 @@
 <body>
 
 <?php include_once('header.php'); ?>
-	    <!--Carousel Wrapper-->
+	<!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
       <!--Indicators-->
