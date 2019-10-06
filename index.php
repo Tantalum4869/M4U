@@ -424,7 +424,7 @@
     </div>
   </main>
   <!--Main layout-->
-
+<?php include_once('header.php'); ?>
 	
   <!-- SCRIPTS -->
   <!-- JQuery -->
