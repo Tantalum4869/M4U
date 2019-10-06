@@ -80,13 +80,6 @@
       </section>
       
       <!--Section: Main info-->
-      <div class="container">
-            <div class="row justify-content-center">
-                  <div class="col-8">
-                        <img src="img/product/buy1.png" class="img-fluid" alt="Responsive image" >
-             </div>
-             </div>
-             </div>
 
              <br>
              <main>
@@ -97,31 +90,19 @@
                    
                   </main>
                   
-                  <div class="card-deck">
+                  <div class="card-deck" style="width: 500px;">
                         <div class="card">
-                          <img src="img\bankk\bank1.jpg" class="card-img-top" alt="...">
+                          <img src="img\bankk\bank4.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
-                            <h5 class="card-title">ธนาคาร กรุงไทย</h5>
-                            <p class="card-text">ชื่อบัญชี :</p>
+                            <h4 class="card-title"><strong>ธนาคารทหารไทย จำกัด(มหาชน)</strong></h4>
+                            <h4 class="card-title">เลขที่บัญชี : 211-2-10654-3</h4>
+							  <h5 class="card-title">ชื่อบัญชี : บจก. แมน ฟอร์ ยู 2012</h5>
+							  <h6 class="card-title">ออมทรัพย์</h6>
                           </div>
                           
                         </div>
-                        <div class="card">
-                          <img src="img\bankk\bank2.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">ธนาคาร กสิกรไทย</h5>
-                            <p class="card-text">ชื่อบัญชี :</p>
-                          </div>
-                          
-                        </div>
-                        <div class="card">
-                          <img src="img\bankk\bank3.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">ธนาคาร กรุงเทพ</h5>
-                            <p class="card-text">ชื่อบัญชี :</p>
-                          </div>
-                          
-                          </div>
+
+
                         </div>
                       </div>
     </main>
@@ -275,8 +256,8 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-
   </script>
+
 </body>
 
 </html>
