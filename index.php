@@ -424,7 +424,7 @@
     </div>
   </main>
   <!--Main layout-->
-<?php include_once('header.php'); ?>
+<?php include_once('footer.php'); ?>
 	
   <!-- SCRIPTS -->
   <!-- JQuery -->
