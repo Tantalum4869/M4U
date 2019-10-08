@@ -1,11 +1,11 @@
 <?php session_start(); ?><!doctype html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Review</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>ระบบออกบิลส่งของชั่วคราว</title>
+  <title>แสดงความคิดเห็น</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link href="css/all.css" rel="stylesheet" type="text/css">
@@ -15,44 +15,20 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <style type="text/css">
     @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
         background: #1C2331 !important;
       }
     }
-    html,
-    body,
-    header,
-    .carousel {
-      height: 60vh;
-    }
-
-    @media (max-width: 740px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #929FBA !important;
-      }
-    }
+	  #dorp{
+		  color: #FFFFFF;
+	  }
+      #center {
+        align-items: center;
+        width:60%;
+}
   </style>
 </head>
 
@@ -100,24 +76,51 @@
 	
 	<br><br><br><br>
 		
-	<!----------------Form---------------------------->	
-		<form action="#" method="post">
-			<table border="1" width="700px">
-				<tr valign="top">
-					<td>ชื่อผู้สั่งสินค้า : </td>
-					<td><input type="text" name="NameReview" placeholder="ชื่อผู้สั่งสินค้า"></td>
-				</tr>
-				<tr valign="top">
-					<td>ความคิดเห็น : </td>
-					<td><textarea class="input-sm" rows="5" cols="50" name="description1" placeholder="รายการสินค้า"></textarea></td>
-				</tr>
-			</table>
-		
-		</form>
+	<!----------------Form---------------------------->
+		<div class="card" style="width: 800px;">
+
+			<!--Card content-->
+			<div class="card-body px-lg-5">
+
+					<div class="text-center">
+						<h4 style="color: #00C2EB">โปรดแสดงความคิดเห็นเกี่ยวกับเรา</h4>
+					</div><br>
+				<!-- Form -->
+				<form class="md-form" style="color: #757575;" action="#" method="post">
+
+					<label for="input" style="margin-top: 10px; color: black">ชื่อผู้สั่งสินค้า</label>
+					<br><input class="form-control"type="text" name="NameReview" placeholder="Enter your name here.">
+
+					
+					<label for="textarea" style="margin-top: 120px; color: black">ความคิดเห็น</label>
+					<br><br><textarea class="form-control md-textarea" rows="5" cols="50" name="description1" placeholder="Enter comment here."></textarea>
+
+
+					<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">ส่งความคิดเห็น</button>
+
+				</form>
+
+			</div>
+
+		</div>
 	</center>
 
     
 
-
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
 </body>
+		
 </html>
