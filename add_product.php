@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+﻿<?php session_start(); ?>
 <?php
 header('Content-Type: text/html; charset=utf-8');
   // Create database connection
@@ -81,7 +81,16 @@ header('Content-Type: text/html; charset=utf-8');
   <link href="css/mdb.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+
+  <script>
+        window.onload = function(){
+            $.get("nav.php", function(data){
+                $("#navigation").html(data);
+            })
+        }
+    </script>
   <style type="text/css">
+
     @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
         background: #1C2331 !important;
@@ -241,16 +250,15 @@ header('Content-Type: text/html; charset=utf-8');
 				<option value="สีม่วง">สีม่วง</option>
 			</select>
 
-			<p for="textInput"  align = 'left'>รูปภาพ</p>
-			<div class="input-group mb-4">
-				<div class="input-group-prepend">
-					<span class="input-group-text">Upload</span>
-				</div>
-				<div class="custom-file">
-					<input type="file" class="custom-file-input" id="customFile" name="image" onChange="return validate(this.value)" aria-describedby="fileInput">
-					<label class="custom-file-label" for="fileInput">Choose file</label>
-				</div>
-			</div>
+			
+						 รูปภาพ : 
+						<td colspan="2"><div class="custom-file">
+							  <input type="file" class="custom-file-input" id="customFile" name="image" onChange="return validate(this.value)">
+							  <label class="custom-file-label" for="customFile">Choose file</label>
+							</div><br>
+								<p id="Warn" class="Warn"></p>
+						</td>
+					
 			<input class="btn btn-info btn-block" type="submit" name="Submit" value="Submit" />
 			<input class="btn btn-info btn-block" type="reset"  name="Cancle" value="Cancle"/>
 		</form>

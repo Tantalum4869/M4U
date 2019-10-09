@@ -28,7 +28,7 @@
 		
 		$delete ="DELETE FROM $sa WHERE ID=$ID";
 		
-		echo $delete;
+		
 		
 	
 	$result = mysql_query($delete)or die(mysql_error());

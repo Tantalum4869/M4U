@@ -1,9 +1,7 @@
-<?php
+<?
 $hostname = "localhost";
 $dbUser = "root"; 
 $dbPass = "123456789";
-
-
 $dbName = "e-commerce";
 
 
