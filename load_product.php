@@ -111,8 +111,8 @@ if(mysqli_num_rows($result) > 0)
 					'<div class="pop" style="margin-top: 10px;">'.
 					 '<button type="button" class="btn btn-info"   data-toggle="modal" data-target="#myModal'.
 	  				$row['ID'].'"> ดูรายละเอียดเพิ่มเติม </button> '.
-					 '<button type="button" style="width:120px;" class="btn btn-danger" onclick="window.location.href=\'productEdit.php?TId='.$row['ID'].' \'" id="btnEdit" >Edit</button>'.
-					'<br /><button type="button" style="width:160px;" class="btn btn-danger" onclick="window.location.href=\'delete_edit_action.php?TId='.$row['ID'].' \'" id="btndelete" '.$hid.' >Delete</button>'.
+					 '<br><input type="image" src="img/edit.png" style="width:20%; height: 20%"  onclick="window.location.href=\'productEdit.php?TId='.$row['ID'].' \'" id="btnEdit" ></Input>'.
+					'<br /><input type="image" src="img/bin.png" style="width:20%; height: 20%" onclick="window.location.href=\'delete_edit_action.php?TId='.$row['ID'].' \'" id="btndelete" '.$hid.' ></input>'.
 				'</div>
 			</div>'.
 			'<div id="myModal'.$row['ID'].'" class="modal fade bd-example-modal-xl" role="dialog" >'.

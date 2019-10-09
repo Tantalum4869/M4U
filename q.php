@@ -185,6 +185,8 @@
   <br>
 
 <div class="container">
+
+
     <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ1()" ><b>คำถามที่ 1 </b> </button> 
     <p id="q1"></p>
     <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ2()" ><b>คำถามที่ 2 </b> </button> 
@@ -209,7 +211,7 @@
 <script>
     function myQ1() {
       document.getElementById("q1").innerHTML = "Anwser1";
-     
+      
     }
     function myQ2() {
      
@@ -234,11 +236,22 @@
       document.getElementById("q6").innerHTML = "Anwser6";
       
     }
+   
     </script>
-
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
 
 
 <?php include_once('header.php'); ?>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
