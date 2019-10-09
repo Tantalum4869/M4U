@@ -77,7 +77,7 @@
 	<br><br><br><br>
 		
 	<!----------------Form---------------------------->
-		<div class="card" style="width: 800px;">
+		<div class="card" style="width: 80%;">
 
 			<!--Card content-->
 			<div class="card-body px-lg-5">
