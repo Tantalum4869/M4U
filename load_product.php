@@ -95,13 +95,13 @@ if(mysqli_num_rows($result) > 0)
 				   <div class="cardTrainer" style="position:relative;
 													max-width:270px;
 													height:410px;
-													background:#63C5CE;
+													background:;
 													border-radius:15px;
 													margin-right:50px;
 													margin-left:50px;
 													margin-bottom:30px ;
 													padding:20px 5px;
-													box-shadow:0 5px  10px;
+													box-shadow:0 1px  5px;
 													font-size: 14px;">'.
                 '<div class="title">' .
                   '<h5>'. $row['Name'].'</h5>'.
