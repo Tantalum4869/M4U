@@ -155,7 +155,7 @@ $er = $_GET['i']; $GLOBALS["ty"] = $er; ;
                   <div class="row wow fadeIn">
   
               <center>
-                  <div >
+                  <div style="margin-bottom: 20px;">
                     <table>
                   <tr>
                    <td>
