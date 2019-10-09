@@ -30,6 +30,8 @@
         width:60%;
 }
   </style>
+ 
+  
 </head>
 
 <body>
@@ -153,85 +155,30 @@
       
       <!--Section: Main info-->
 			<!-- Grid row -->
-			<div class="row">
+            
+             
+  <?php
+  	require 'connect.php';
+  	
+	$review = "SELECT * FROM Review";
+	$result = mysqli_query($dbcon , $review);
+	
+	if($result) {
+		while ($row = mysqli_fetch_array($result)){
+  ?>
   <div class="col-sm-3">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title"><?php echo $row['Name']; ?></h5>
+        <p class="card-text"><?php echo $row['Review']; ?></p>
        
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-       
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-      </div>
-    </div>
-  </div>
-  
-</div>
-<br>
-<div class="row">
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-       
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-       
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-      </div>
-    </div>
-  </div>
-  
-</div>
+  <br> 
+
+<?php } } ?>
+
               <hr class="my-5">
              <main>
                     <div class="container">

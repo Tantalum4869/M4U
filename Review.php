@@ -34,9 +34,6 @@
 
 <body>
 	<center>
-		
-	<?php include_once('header.php'); ?>
-
     <!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -74,7 +71,7 @@
         </div>
 	</div
 	
-	<br><br><br><br>
+	><br><br><br><br>
 		
 	<!----------------Form---------------------------->
 		<div class="card" style="width: 80%;">
@@ -86,17 +83,17 @@
 						<h4 style="color: #00C2EB">โปรดแสดงความคิดเห็นเกี่ยวกับเรา</h4>
 					</div><br>
 				<!-- Form -->
-				<form class="md-form" style="color: #757575;" action="#" method="post">
+				<form class="md-form" style="color: #757575;" action="save.php" method="post"">
 
 					<label for="input" style="margin-top: 10px; color: black">ชื่อผู้สั่งสินค้า</label>
 					<br><input class="form-control"type="text" name="NameReview" placeholder="Enter your name here.">
 
 					
 					<label for="textarea" style="margin-top: 120px; color: black">ความคิดเห็น</label>
-					<br><br><textarea class="form-control md-textarea" rows="5" cols="50" name="description1" placeholder="Enter comment here."></textarea>
+					<br><br><textarea class="form-control md-textarea" rows="5" cols="50" name="Review" placeholder="Enter comment here."></textarea>
 
 
-					<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">ส่งความคิดเห็น</button>
+					<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" name="submit">ส่งความคิดเห็น</button>
 
 				</form>
 
@@ -104,6 +101,12 @@
 
 		</div>
 	</center>
+
+
+
+
+
+
 
     
 
