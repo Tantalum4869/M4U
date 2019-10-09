@@ -111,33 +111,34 @@ if(mysqli_num_rows($result) > 0)
 					'<div class="pop" style="margin-top: 10px;">'.
 					 '<button type="button" class="btn btn-info"   data-toggle="modal" data-target="#myModal'.
 	  				$row['ID'].'"> ดูรายละเอียดเพิ่มเติม </button> '.
-					 '<button type="button" style="width:120px;" class="btn btn-danger" onclick="window.location.href=\'productEdit.php?TId='.$row['ID'].' \'" id="btnEdit" '.$hid.' >Edit</button>'.
+					 '<button type="button" style="width:120px;" class="btn btn-danger" onclick="window.location.href=\'productEdit.php?TId='.$row['ID'].' \'" id="btnEdit" >Edit</button>'.
 					'<br /><button type="button" style="width:160px;" class="btn btn-danger" onclick="window.location.href=\'delete_edit_action.php?TId='.$row['ID'].' \'" id="btndelete" '.$hid.' >Delete</button>'.
 				'</div>
 			</div>'.
 			'<div id="myModal'.$row['ID'].'" class="modal fade bd-example-modal-xl" role="dialog" >'.
 					'<div class="modal-dialog modal-xl">'.
-								'<div class="modal-content">'.
+								'<div class="modal-content" style="width: 50%;
+								height: 50%; top :100px; " >'.
 									'<div class="modal-header">
-										<div style="padding-left:480px;font-size:20px;font-weight:bold;">ข้อมูลสินค้า<br>
+										<div style="padding-left:150px;font-size:20px;font-weight:bold;">ข้อมูลสินค้า<br>
 										<img src="./productimg/'. $row['Img'].'" style="width:200px;padding-top:10px;"/>
 									</div>'.
 	  									'<button type="button" class="close" data-dismiss="modal">&times;</button>'.
 									'</div>'.
-									'<div class="modal-body">'.
+									'<div class="modal-body style =" color: blue;">'.
 										'<table border="0" >'.
-										'<tr style="padding-top:15px; ">'. 
-											'<td width="15%" > ชื่อ : </td>'.
-												'<td >'. $row['Name'].'</td>	
+										'<tr style="padding-top:15px;  font-size: large;">'. 
+											'<td style="font-weight: bold;  font-size: large;"> ชื่อ : </td>'.
+												'<td style="font-weight: bold;  font-size: large;" >'. $row['Name'].'</td>	
 										</tr>'.
 										'<tr style="padding-top:30px; ">'.  
-											'<td>คำอธิบาย : </td>'.
-											 '<td>'.$row['Description'].'</td>
+											'<td style="font-weight: bold;  font-size: large;" >คำอธิบาย : </td>'.
+											 '<td style="font-weight: bold;  font-size: large;" >'.$row['Description'].'</td>
 										</tr>'.
 										''.
 										'<tr style="padding-top:30px; ">' .
-											'<td>สี :</td>'.
-											'<td>'. nl2br($row['Color']).'</td>
+											'<td style="font-weight: bold;  font-size: large;">สี :</td>'.
+											'<td style="font-weight: bold;  font-size: large;" >'. nl2br($row['Color']).'</td>
 										</tr>'.
 										'
 										</table>'.	
