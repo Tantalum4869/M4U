@@ -195,7 +195,7 @@ header('Content-Type: text/html; charset=utf-8');
             <!-- Mask & flexbox optio-->
           </div>
         </div>
-	</div
+		</div>
 	
 	<br><br><br><br>
 	
@@ -203,84 +203,59 @@ header('Content-Type: text/html; charset=utf-8');
 	  
 	  
 	  <center>
-	เพิ่มข้อมูลสินค้า
-		
-		<table  align="center"  >
-		<form name="traineradd" method="post" action="add_product.php" enctype="multipart/form-data"  onSubmit="return validate();">
-					
-					<tr>
-						<td> ชื่อสินค้า : </td>
-						<td><input type="text" name="name"  required /></td>
-						
+	<div style="width: 70%;">
+		<form class="border border-light p-5" name="traineradd" method="post" action="add_product.php" enctype="multipart/form-data"  onSubmit="return validate();">
+			<p for="textInput"  align = 'left'>ชื่อสินค้า</p>
+			<input class="form-control mb-4" type="text" name="name" placeholder="ชื่อสินค้า"  required />
 
-					</tr>
-					
-					<tr>
-						<td> คำอธิบาย : </td>
-						<td colspan="2" ><textarea name="des" cols="40" rows="5" " required ></textarea></td>
-					</tr>
-					<tr>
-						<td> หมวดหมู่สินค้า </td>
-						<td colspan="2">
+			<p for="textInput"  align = 'left'>คำอธิบาย</p>
+			<textarea class="form-control mb-4" placeholder="คำอธิบาย" name="des" cols="40" rows="5" required></textarea>
 
-						<select name="type" required>
-						<option selected value="" >เลือกประเภทสินค้า</option>
-							  <option value="1">เสื้อโปโล</option>
-							  <option value="2">ผ้ากันเปื้อน</option>
-							  <option value="3">หมวก</option>
-							<option value="4">กางเกง</option>
-							  <option value="5">ชุดกีฬา</option>
-							  <option value="6">ชุดสูท</option>
-							<option value="7">เสื้อยืด</option>
-							  <option value="8">ร่ม</option>
-							  <option value="9">เสิ้อแจ็คเก็ต</option>
-						</select>
-						
-			
-						</td>
-					</tr>
-					<tr>
-						<td> สี </td>
-						<td colspan="2">
+			<p for="textInput"  align = 'left'>หมวดหมู่สินค้า</p>
+			<select class="browser-default custom-select mb-4" name="type" required>
+				<option selected value="" >เลือกประเภทสินค้า</option>
+				<option value="1">เสื้อโปโล</option>
+				<option value="2">ผ้ากันเปื้อน</option>
+				<option value="3">หมวก</option>
+				<option value="4">กางเกง</option>
+				<option value="5">ชุดกีฬา</option>
+				<option value="6">ชุดสูท</option>
+				<option value="7">เสื้อยืด</option>
+				<option value="8">ร่ม</option>
+				<option value="9">เสิ้อแจ็คเก็ต</option>
+			</select>
 
-						<select name="color" required>
-						<option selected value="" >เลือกสีสินค้า</option>
-							<option value="สีดำ">สีดำ</option>
-							  <option value="สีขาว">สีขาว</option>
-							  <option value="สีเทา">สีเทา</option>
-							<option value="สีแดง">สีแดง</option>
-							  <option value="สีฟ้า">สีฟ้า</option>
-							  <option value="สีเหลือง">สีเหลือง</option>
-							<option value="สีเขียว">สีเขียว</option>
-							  <option value="สีน้ำตาล">สีน้ำตาล</option>
-							  <option value="สีชมพู่">สีชมพู่</option>
-							  <option value="สีม่วง">สีม่วง</option>
 
-						</select>
+			<p for="textInput"  align = 'left'>สี</p>
+			<select class="browser-default custom-select mb-4" name="color" required>
+				<option selected value="" >เลือกสีสินค้า</option>
+				<option value="สีดำ">สีดำ</option>
+				<option value="สีขาว">สีขาว</option>
+				<option value="สีเทา">สีเทา</option>
+				<option value="สีแดง">สีแดง</option>
+				<option value="สีฟ้า">สีฟ้า</option>
+				<option value="สีเหลือง">สีเหลือง</option>
+				<option value="สีเขียว">สีเขียว</option>
+				<option value="สีน้ำตาล">สีน้ำตาล</option>
+				<option value="สีชมพู่">สีชมพู่</option>
+				<option value="สีม่วง">สีม่วง</option>
+			</select>
 
-			
-						</td>
-					</tr>
-					
-					<tr>
-						<td> รูปภาพ : </td>
-						<td colspan="2"><div>
-							  <input type="file" id="customFile" name="image" onChange="return validate(this.value)">
-							  <label  for="customFile">Choose file</label>
-							</div><br>
-								
-						</td>
-					</tr>
-					
-					<tr>
-						<td colspan="3" align="center"><input type="submit" name="Submit" value="Submit" /> 
-						 <input type="reset"  name="Cancle" value="Cancle"/> </td>
-					</tr>
-				</form>
-				</table>
-				</div>	
+			<p for="textInput"  align = 'left'>รูปภาพ</p>
+			<div class="input-group mb-4">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Upload</span>
 				</div>
-		  </div>
+				<div class="custom-file">
+					<input type="file" class="custom-file-input" id="customFile" name="image" onChange="return validate(this.value)" aria-describedby="fileInput">
+					<label class="custom-file-label" for="fileInput">Choose file</label>
+				</div>
+			</div>
+			<input class="btn btn-info btn-block" type="submit" name="Submit" value="Submit" />
+			<input class="btn btn-info btn-block" type="reset"  name="Cancle" value="Cancle"/>
+		</form>
+	</div>
+				</div>
  </center>
  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
