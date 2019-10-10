@@ -93,21 +93,14 @@
         <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
 
         <!-- Facebook -->
-        <a type="button" class="btn-floating btn-fb">
-          <i class="fab fa-facebook-f"></i>
-        </a>
+		<button type="button" class="btn btn-primary btn-circle"><i class="fab fa-facebook-f"></i></button>
+
         <!-- Twitter -->
-        <a type="button" class="btn-floating btn-tw">
-          <i class="fab fa-twitter"></i>
-        </a>
+		<button type="button" class="btn btn-info btn-circle"><i class="fab fa-twitter"></i></button>
+
         <!-- Google +-->
-        <a type="button" class="btn-floating btn-gplus">
-          <i class="fab fa-google-plus-g"></i>
-        </a>
-        <!-- Dribbble -->
-        <a type="button" class="btn-floating btn-dribbble">
-          <i class="fab fa-dribbble"></i>
-        </a>
+		<button type="button" class="btn btn-danger btn-circle"><i class="fab fa-google-plus-g"></i></button>
+
 
       </div>
       <!-- Grid column -->
