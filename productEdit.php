@@ -71,7 +71,7 @@
 		<form name="productEdit" method="post" action="product_edit_action.php" enctype="multipart/form-data" >		
 				
 			 
-	<?	while($objResult = mysql_fetch_array($objQuery)) {
+	<?php	while($objResult = mysql_fetch_array($objQuery)) {
 			$title=$objResult['Color'];
 			if($title=="สีดำ"){
 				$a1 = "selected";
