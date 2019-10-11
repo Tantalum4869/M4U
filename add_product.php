@@ -159,7 +159,7 @@ header('Content-Type: text/html; charset=utf-8');
 				document.getElementById("Warn").style.color = "red";
 				return false;
 			}else{
-				$(".Warn").html(name);
+				$(".Warn").html("");
 				return true;
 			}
 		
@@ -250,17 +250,20 @@ header('Content-Type: text/html; charset=utf-8');
 				<option value="สีม่วง">สีม่วง</option>
 			</select>
 
-			
-						 รูปภาพ : 
-						<td colspan="2"><div class="custom-file">
+		
+			<p for="textInput"  align = 'left'>รูปภาพ</p>
+						<div class="custom-file">
+						
 							  <input type="file" class="custom-file-input" id="customFile" name="image" onChange="return validate(this.value)">
 							  <label class="custom-file-label" for="customFile">Choose file</label>
 							</div><br>
 								<p id="Warn" class="Warn"></p>
-						</td>
+					
 					
 			<input class="btn btn-info btn-block" type="submit" name="Submit" value="Submit" />
-			<input class="btn btn-info btn-block" type="reset"  name="Cancle" value="Cancle"/>
+			
+			<input type=”button” style="width:140px;" name=”button” class="btn btn-info btn-block" value="Cancel"  onclick="window.location='product.php'"/>
+			
 		</form>
 	</div>
 				</div>

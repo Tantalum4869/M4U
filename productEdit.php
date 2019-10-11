@@ -26,24 +26,14 @@
 	  SELECT *  FROM umbrella WHERE ID=$ID";
 	$objQuery = mysql_query($strSQL);
 	 
-?>
+?><!DOCTYPE html>
+<html lang="en">
 
-
-<!DOCTYPE html>
-<html ><head>
-  	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-  
-  
-  
-    <title>แก้ไขข้อมมูลสินค้า</title>
-    
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ติดต่อเรา</title>
   <script>
         window.onload = function(){
             $.get("nav.php", function(data){
@@ -51,27 +41,99 @@
             })
         }
 	</script>
-	<div id="navigation" ></div>
-	<style>
-		tr{
-			vertical-align: text-top;
-			position: relative;
-		}
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="css/all.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style type="text/css">
+    /* Popup container - can be anything you want */
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    /* The actual popup */
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555b;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+    
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+    
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+    
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0;} 
+      to {opacity: 1;}
+    }
+    
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+    
+  </style>
+  <script>
+	function validate(file){
+			var ext = file.substr(file.lastIndexOf('.')+1);
+			var allow= ["jpg","jpeg","png","PNG"]; 
+			var name= file.split(/(\\|\/)/g).pop();
+			if(allow.lastIndexOf(ext)==-1){
+				$(".Warn").html("ไฟล์นามสกุล jpg jpeg png เท่านั้น");
+				document.getElementById("Warn").style.color = "red";
+				return false;
+			}else{
+				$(".Warn").html("");
+				return true;
+			}
 		
-	</style>
-	
-  </head>   
-  <body>
-	  
-	  <center>
-			<div class="contentblock">
-				<div style="font-size: 16px; text-align:justify;">
-		<div class="container-fluid">	
-		<table ] height="800" width="600px" align="center">
-		<form name="productEdit" method="post" action="product_edit_action.php" enctype="multipart/form-data" >		
-				
-			 
-	<?php	while($objResult = mysql_fetch_array($objQuery)) {
+	}
+</script>
+</head>
+
+<body>
+
+<center>
+<div style="width: 60%;" align="left">
+<form class="border border-light p-5" name="productEdit" method="post" action="product_edit_action.php">
+<?php	while($objResult = mysql_fetch_array($objQuery)) {
 			$title=$objResult['Color'];
 			if($title=="สีดำ"){
 				$a1 = "selected";
@@ -113,43 +175,35 @@
 				$sel3 = "selected";
 			}else if($s >= 1){
 				$sel1 = "selected";
-			}
-
-
-					?> 
-					<tr><td colspan="3" align="center">
-						 <input type="hidden" id="tid" name="tid" value="<? echo $objResult['ID']; ?>"/>
-						  <input type="hidden" id="oldPic" name="oldPic" value="<? echo $objResult['Img']['name'];?>"/>
+      }
+      ?>  <center>
+    <p class="h4 mb-4 text-center" >แก้ไขข้อมูลสินค้า</p>
+    
+    <input type="hidden" id="tid" name="tid" value="<? echo $objResult['ID']; ?>"/>
+		 <input type="hidden" id="oldPic" name="oldPic" value="<? echo $objResult['Img']['name'];?>"/>
 
 						<img src="productimg/<? echo $objResult['Img']; ?>" width="200px"/><br>
-						
-					</td></tr>
-					<tr>
-					
-					<td colspan="3">
-					<p style="margin-left: 100px;margin-top: 15px; margin-bottom: 15px;">Change Picture :
-						<input type="file" name="changePic"/>
-						</p>
- 					
-					</td>			
-					</tr>
-					
-					<tr>
-						<td> ชื่อ : </td>
-						<td><input type="text" name="name" class="form-control"  value="<? echo $objResult['Name']; ?>" required  /></td>
-						
+     </center> <center> <p id="Warn" class="Warn" > </p> </center>
+    <div class="input-group mb-4">
+     
+        <div class="input-group-prepend">
+            <span class="input-group-text">เลือกรูปภาพ</span>
+        </div>
+        <div class="custom-file">
+            <input type="file" name="changePic" class="custom-file-input"  id="customFile" onChange="return validate(this.value)">
+            <label class="custom-file-label" for="customFile">File Label</label>
+    </div> 
+        </div>
 
-					</tr>
-					
-					<tr>
-						<td> รายละเอียด : </td>
-						<td colspan="2"><textarea name="des"  cols="40" rows="5" class="form-control" ><? echo $objResult['Description']; ?></textarea></td>
-					</tr>
-					<tr>
-						<td> ประเภทสินค้า : </td>
-						<td colspan="2">
-						<select name="type" required>
-							<option value="1"  <? echo $sel1; ?>>เสื้อโปโล</option>
+    <label for="textInput">ชื่อ</label>
+    <input type="text" name="name" class="form-control mb-4" value="<? echo $objResult['Name']; ?>" required>
+
+    <label for="textarea">คำอธิบาย</label>
+    <textarea class="form-control mb-4" name="des" cols="40" rows="5" ><? echo $objResult['Description']; ?></textarea>
+
+    <label for="select">ประเภทสินค้า</label>
+    <select class="browser-default custom-select mb-4" name="type" required>
+    <option value="1"  <? echo $sel1; ?>>เสื้อโปโล</option>
 							  <option value="2"  <? echo $sel2; ?>>ผ้ากันเปื้อน</option>
 							  <option value="3"  <? echo $sel3; ?>>หมวก</option>
 							<option value="4"  <? echo $sel4; ?>>กางเกง</option>
@@ -157,16 +211,13 @@
 							  <option value="6"  <? echo $sel6; ?>>ชุดสูท</option>
 							<option value="7"  <? echo $sel7; ?>>เสื้อยืด</option>
 							  <option value="8"  <? echo $sel8; ?>>ร่ม</option>
-							  <option value="9"  <? echo $sel9; ?>>เสิ้อแจ็คเก็ต</option>	
-						</select>
-						</td>
-					</tr>
-					<tr>
-						<td> สี : </td>
-						<td colspan="2">
-						<select name="color" required>
-						<option value="สีดำ" <? echo $a1; ?>>สีดำ</option>
-							  <option value="สีขาว"  <? echo $a2; ?>>สีขาว</option>
+							  <option value="9"  <? echo $sel9; ?>>เสิ้อแจ็คเก็ต</option>
+    </select>
+
+    <label for="select">สี</label>
+    <select class="browser-default custom-select mb-4" name="color" required>
+    <option value="สีดำ" <? echo $a1; ?>>สีดำ</option>
+        <option value="สีขาว"  <? echo $a2; ?>>สีขาว</option>
 							  <option value="สีเทา"  <? echo $a3; ?>>สีเทา</option>
 							<option value="สีแดง"  <? echo $a4; ?>>สีแดง</option>
 							  <option value="สีฟ้า"  <? echo $a5; ?>>สีฟ้า</option>
@@ -175,21 +226,32 @@
 							  <option value="สีน้ำตาล"  <? echo $a8; ?>>สีน้ำตาล</option>
 							  <option value="สีชมพู่"  <? echo $a9; ?>> สีชมพู่</option>
 							  <option value="สีม่วง"  <? echo $a10; ?>>สีม่วง</option>
-						</select>
-						</td>
-					</tr>
-					
-			<? } ?>
-					<tr>
-						<td colspan="3" align="center"><input type="submit" name="Save" value="Save" class="btn btn-primary"/> 
-						 <input type="reset"  name="Cancle" value="Cancle" class="btn btn-secondary"/> </td>
-					</tr>
-				</form>
-				</table>
-				</div>	
-				</div>
-		  </div>
- </center>
 
- </body>
+    </select>
+    <? } ?>
+    <center>
+    	<button class="btn btn-info" type="submit" name="Save" value="Save">SAVE</button>
+      <input type=”button” style="width:130px;" name=”button” class="btn btn-info" value="Cancel"  onclick="window.location='product.php'"/>
+	</center>
+</form>
+</div>
+</center>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+</body>
+
 </html>
