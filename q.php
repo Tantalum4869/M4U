@@ -187,17 +187,17 @@
 <div class="container">
 
 
-    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ1()" ><b>คำถามที่ 1 </b> </button> 
+    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ1()" ><b>1.วิธีการสั่งซื้อ </b> </button> 
     <p id="q1"></p>
-    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ2()" ><b>คำถามที่ 2 </b> </button> 
+    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ2()" ><b>2.จำนวนขั้นต่ำในการสั่งซื้อ</b> </button> 
   <p id="q2"></p> 
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ3()" > <b>คำถามที่ 3 </b> </button> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ3()" > <b> 3.ขอใบเสนอราคาได้ที่ไหน</b> </button> 
   <p id="q3"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ4()" > <b>คำถามที่ 4 </b> </button> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ4()" > <b>4.มีหน้าร้านไหม</b> </button> 
   <p id="q4"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ5()" > <b>คำถามที่ 5 </b> </button> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ5()" > <b>5.ชำระเงินได้ทางใดบ้าง</b> </button> 
   <p id="q5"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ6()" > <b>คำถามที่ 6 </b> </button> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ6()" > <b>6.ช่องทางการสั่งติดต่อสอบถาม</b> </button> 
   <p id="q6"></p>
 </div>
 
