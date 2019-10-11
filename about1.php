@@ -94,33 +94,101 @@
 
 <?php include_once('header.php'); ?>
   
-  <!-- Card -->
-<div class="card card-cascade wider reverse">
+	<!--Carousel Wrapper-->
+    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
-    <!-- Card image -->
-    <div class="view view-cascade overlay">
-      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/nature7.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                  <strong>เกี่ยวกับเรา<br></strong>
+                </h1>
+
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+        </div>
+        <!--/First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+				<strong>เกี่ยวกับเรา<br></strong>
+                </h1>
+
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+        </div>
+        <!--/Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+				<strong>เกี่ยวกับเรา<br></strong>
+                </h1>
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+        </div>
+        <!--/Third slide-->
+      </div>
+      <!--/.Slides-->
+
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
       </a>
+      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+
     </div>
-  
-    <!-- Card content -->
-    <div class="card-body card-body-cascade text-center">
-  
-      <!-- Title -->
-      <h4 class="card-title"><strong>ประวัติ</strong></h4>
-      <!-- Subtitle -->
-      <h6 class="font-weight-bold indigo-text py-2">บริษัท</h6>
-      <!-- Text -->
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem perspiciatis voluptatum a, quo nobis, non commodi quia repellendus sequi nulla voluptatem dicta reprehenderit, placeat laborum ut beatae ullam suscipit veniam.
-      </p>
-    </div>
-  
-    <hr class="my-5">
-  
-    
-  <!-- Card -->
+  <!--/.Carousel Wrapper-->
+	<div>
+		<h2>ประวัติ</h2>
+	</div>
+<br><br>
   <div class="container">
    <h1 class="" >ส่วนหนึ่งของลูกค้าที่ไว้วางใจเรา</h1>
      <!-- Card deck -->
@@ -129,7 +197,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom1.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -150,7 +218,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom2.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -171,7 +239,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom3.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -192,7 +260,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom4.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -287,7 +355,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom8.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -308,7 +376,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom9.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -329,7 +397,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom10.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -350,7 +418,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom11.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -444,7 +512,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom15.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -465,7 +533,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom16.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -486,7 +554,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom17.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
@@ -507,7 +575,7 @@
 			<!-- Card -->
 			<div class="card mb-5">
 			  <!--Card image-->
-			  <div class="view overlay" style="height: 180px;">
+			  <div class="view overlay">
 				<img class="card-img-top" src="img/custom/custom18.jpg" alt="Card image cap">
 				<a href="#!">
 				  <div class="mask rgba-white-slight"></div>
