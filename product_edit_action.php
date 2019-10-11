@@ -3,21 +3,27 @@ include('conn.php');
 
  if(isset($_POST['Save']))
  {
-	 $types = $_POST['type'];
+	
+	$id =$_POST['tid'];
+	$name = $_POST['name'];
+	$des = $_POST['des'];
+	$type = $_POST['type'];
+	$color = $_POST['color'];
+	$typee = $_POST['type'];
 	
 	 function update() {
 
 
 		$update =""; 
-		$image = $_FILES['changePic']['name'];
-	   $id =$_POST['tid'];
-	   $name = $_POST['name'];
-	   $des = $_POST['des'];
-	   $type = $_POST['type'];
-	   $color = $_POST['color'];
+		$images = $_FILES['changePic']['name'];
+	   $ids =$_POST['tid'];
+	   $names = $_POST['name'];
+	   $dess = $_POST['des'];
+	   $types = $_POST['type'];
+	   $colors = $_POST['color'];
 	   
 	   
-	   switch ($type) {
+	   switch ($types) {
 		   case 1:
 			   $w = polo;
 			   break;
@@ -55,21 +61,17 @@ include('conn.php');
 			$target = "productimg/".basename($image);
 			move_uploaded_file($_FILES['changePic']['tmp_name'], $target);
 		
-			$update ="UPDATE $w SET Name='$name',Description='$des',Color='$color',Img='$image' WHERE ID=$id";	
+			$update ="UPDATE $w SET Name='$names',Description='$dess',Color='$colors',Img='$images' WHERE ID=$ids";	
 			
 		  }
 		else {
-			$update ="UPDATE $w SET Name='$name',Description='$des',Color='$color' WHERE ID=$id ";
+			$update ="UPDATE $w SET Name='$names',Description='$dess',Color='$colors' WHERE ID=$ids ";
 			
 			}
 		
 		$result2 = mysql_query($update)or die(mysql_error());
 		 
-		if($result2) {
-			echo "<script>alert('Update Successful');window.location.href='product.php';</script>";
-		}else{
-			echo "<script>alert('Update Failed');</script>";
-		}  
+		
 	}	
 	function intserts($g) {
 		$add =""; $del =""; 
@@ -121,34 +123,43 @@ include('conn.php');
 	
 	}
 	
-	update();
+	
 
-	switch ($types) {
-		case 1: intserts(polo); 
+	switch ($typee) {
+		case 1: update();
+			intserts(polo); 
 			
 			break;
-		case 2:intserts(apron); 
+		case 2:update();
+			intserts(apron); 
 			
 			break;
-		case 3:intserts(hat); 
+		case 3:update();
+			intserts(hat); 
 			
 			break;
-		case 4:intserts(pants); 
+		case 4:update();
+			intserts(pants); 
 			
 			break;	
-		case 5:intserts(sport); 
+		case 5:update();
+			intserts(sport); 
 			
 			break;
-		case 6:intserts(suits); 
+		case 6:update();	
+			intserts(suits); 
 				
 			break;
-		case 7:intserts(tshirt); 
+		case 7:update();
+			intserts(tshirt); 
 			
 			break;
-		case 8:intserts(umbrella); 
+		case 8:update();
+			intserts(umbrella); 
 			
 			break;
-		case 9:intserts(jacket); 
+		case 9:update();
+			intserts(jacket); 
 			
 			break;		
 		

@@ -189,11 +189,11 @@
 					<div class="card">
 
 					  <!--Card image-->
-					  <div class="view overlay">
+					  <div class="view overlay"><a href="product.php" >
 						<img src="img/bestsell/1.jpg" class="card-img-top" 
-						  alt="">
+						  alt=""> </a>
 						<a>
-						  <div class="mask rgba-white-slight"></div>
+						  <div class="mask rgba-white-slight" href="product.php"></div>
 						</a>
 					  </div>
 					  <!--Card image-->
@@ -201,13 +201,14 @@
 					  <!--Card content-->
 					  <div class="card-body text-center">
 						<!--Category & Title-->
-						<a href="" class="grey-text">
+						<a href="product.php" class="grey-text">
 						  <h5>เสื้อโปโล</h5>
 						</a>
 						<h5>
 						  <strong>
-							<a href="" class="dark-grey-text">คำอธิบาย
-							  <span class="badge badge-pill danger-color">NEW</span>
+							<a href="product.php" class="dark-grey-text">คำอธิบาย
+              <span class="badge badge-pill primary-color">Bestseller อันดับ1</span>
+							  
 							</a>
 						  </strong>
 						</h5>
@@ -227,9 +228,9 @@
 					<div class="card">
 
 					  <!--Card image-->
-					  <div class="view overlay">
+					  <div class="view overlay"><a href="product.php" >
 						<img src="img/bestsell/2.jpg" class="card-img-top"
-						  alt="">
+						  alt=""></a>
 						<a>
 						  <div class="mask rgba-white-slight"></div>
 						</a>
@@ -239,12 +240,13 @@
 					  <!--Card content-->
 					  <div class="card-body text-center">
 						<!--Category & Title-->
-						<a href="" class="grey-text">
+						<a href="product.php" class="grey-text">
 						  <h5>เสื้อยืด</h5>
 						</a>
 						<h5>
 						  <strong>
-							<a href="" class="dark-grey-text">คำอธิบาย</a>
+							<a href="product.php" class="dark-grey-text">คำอธิบาย</a>
+              <span class="badge badge-pill primary-color">Bestseller อันดับ2</span>
 						  </strong>
 						</h5>
 					  </div>
@@ -263,9 +265,9 @@
 					<div class="card">
 
 					  <!--Card image-->
-					  <div class="view overlay">
+					  <div class="view overlay"><a href="product.php" >
 						<img src="img/bestsell/3.jpg" class="card-img-top"
-						  alt="">
+						  alt=""></a>
 						<a>
 						  <div class="mask rgba-white-slight"></div>
 						</a>
@@ -275,13 +277,13 @@
 					  <!--Card content-->
 					  <div class="card-body text-center">
 						<!--Category & Title-->
-						<a href="" class="grey-text">
+						<a href="product.php" class="grey-text">
 						  <h5>เสื้อเจ็คเก็ต</h5>
 						</a>
 						<h5>
 						  <strong>
-							<a href="" class="dark-grey-text">คำอธิบาย
-							  <span class="badge badge-pill primary-color">bestseller</span>
+							<a href="product.php" class="dark-grey-text">คำอธิบาย
+							  <span class="badge badge-pill primary-color">Bestseller อันดับ3</span>
 							</a>
 						  </strong>
 						</h5>
@@ -301,9 +303,9 @@
 					<div class="card">
 
 					  <!--Card image-->
-					  <div class="view overlay">
+					  <div class="view overlay"> <a href="product.php" >
 						<img src="img/bestsell/4.jpg" class="card-img-top"
-						  alt="">
+						  alt=""> </a>
 						<a>
 						  <div class="mask rgba-white-slight"></div>
 						</a>
@@ -313,12 +315,13 @@
 					  <!--Card content-->
 					  <div class="card-body text-center">
 						<!--Category & Title-->
-						<a href="" class="grey-text">
+						<a href="product.php" class="grey-text">
 						  <h5>หมวก</h5>
 						</a>
 						<h5>
 						  <strong>
-							<a href="" class="dark-grey-text">คำอธิบาย</a>
+							<a href="product.php" class="dark-grey-text">คำอธิบาย</a>
+              <span class="badge badge-pill primary-color">Bestseller อันดับ4</span>
 						  </strong>
 						</h5>
 					  </div>
@@ -359,35 +362,42 @@
         
         <div class="card-deck" >
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top"  alt="...">
+             <a href="product.php">  
+              <img src="img\product\M4u0175.jpg" class="card-img-top" style="width:180px; height: 220px;"  alt="ไปหน้าสินค้า">
               <div class="card-body">
-                <h5 class="card-title">เสื้อโปโล</h5>  
+                <h5 class="card-title" style="margin-right: -50px;">เสื้อโปโล</h5>  </a>
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top"   alt="...">
+             <a href="product.php">  
+              <img src="img\product\M40054.jpg" class="card-img-top" style="width:180px; height: 220px;"    alt="...">
               <div class="card-body">
-                <h5 class="card-title">เสื้อยืด</h5>
+                <h5 class="card-title">เสื้อยืด</h5></a>
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top" alt="...">
+             <a href="product.php">  
+              <img src="img\product\M4u0198.jpg" class="card-img-top" style="width:180px; height: 220px;" alt="...">
               <div class="card-body">
-                <h5 class="card-title">เสื้อเจ็คเก็ต</h5>
+                <h5 class="card-title" >เสื้อเจ็คเก็ต</h5></a>
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-                <img src="img\product\1.jpg" class="card-img-top" alt="...">
+                <a href="product.php">  
+                <img src="img\product\M4u0196.jpg" class="card-img-top" style="width:180px; height: 220px;" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">เสื้อสูท</h5>
+                  <h5 class="card-title">เสื้อสูท</h5></a>
                 </div>
               </div>
               <div class="card" style="width: 12rem;">
-                  <img src="img\product\1.jpg" class="card-img-top"  alt="...">
+                  <a href="product.php">  
+                  <img src="img\product\M4u0070.jpg" class="card-img-top" style="width:180px; height: 220px;"  alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">หมวก</h5>
+                    <h5 class="card-title">หมวก</h5></a>
                   </div>
+                  
                 </div>
+                
           </div>
         </div>
         
