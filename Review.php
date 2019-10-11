@@ -1,11 +1,11 @@
-<?php session_start(); ?><!doctype html>
+<?php session_start(); ?><!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>แสดงความคิดเห็น</title>
+  <title>สั่งซื้อ</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link href="css/all.css" rel="stylesheet" type="text/css">
@@ -30,11 +30,14 @@
         width:60%;
 }
   </style>
+ 
+  
 </head>
 
 <body>
-	<center>
-    <!--Carousel Wrapper-->
+
+<?php include_once('header.php'); ?>
+	<!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
       <!--Indicators-->
@@ -58,58 +61,153 @@
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
                 <h1 class="mb-4">
-                  <strong>แสดงความคิดเห็น</strong>
+                  <strong>คำรีวิวจากลูกค้า<br></strong>
                 </h1>
 
               </div>
               <!-- Content -->
-
             </div>
             <!-- Mask & flexbox options-->
-
           </div>
         </div>
-	</div
-	
-	><br><br><br><br>
+        <!--/First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+				<strong>คำรีวิวจากลูกค้า<br></strong>
+                </h1>
+
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+        </div>
+        <!--/Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+				<strong>คำรีวิวจากลูกค้า<br></strong>
+                </h1>
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+        </div>
+        <!--/Third slide-->
+
+      </div>
+      <!--/.Slides-->
+
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
 		
-	<!----------------Form---------------------------->
-		<div class="card" style="width: 80%;">
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
 
-			<!--Card content-->
-			<div class="card-body px-lg-5">
+        <!--Grid row-->
+        <div class="row">
 
-					<div class="text-center">
-						<h4 style="color: #00C2EB">โปรดแสดงความคิดเห็นเกี่ยวกับเรา</h4>
-					</div><br>
-				<!-- Form -->
-				<form class="md-form" style="color: #757575;" action="save.php" method="post"">
-
-					<label for="input" style="margin-top: 10px; color: black">ชื่อผู้สั่งสินค้า</label>
-					<br><input class="form-control"type="text" name="NameReview" placeholder="Enter your name here.">
-
-					
-					<label for="textarea" style="margin-top: 120px; color: black">ความคิดเห็น</label>
-					<br><br><textarea class="form-control md-textarea" rows="5" cols="50" name="Review" placeholder="Enter comment here."></textarea>
-
-
-					<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" name="submit">ส่งความคิดเห็น</button>
-
-				</form>
-
+		  <!--Main layout-->
+		  <main>
+			<div class="container">
+                <h2 class="h2 mb-2"><strong>รีวิว</strong></h2><br>
+			  <!--Section: Products v.3-->
 			</div>
+          </main>
+         
+		  <!--Main layout-->
+        </div>
+        <!--Grid row-->
+      </section>
+      
+      <!--Section: Main info-->
+			<!-- Grid row -->
+            
+             
+  <?php
+  	require 'connect.php';
+  	
+	$review = "SELECT * FROM Review";
+	$result = mysqli_query($dbcon , $review);
+	
+	if($result) {
+		while ($row = mysqli_fetch_array($result)){
+  ?>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><?php echo $row['Name']; ?></h5>
+        <p class="card-text"><?php echo $row['Review']; ?></p>
+       
+      </div>
+    </div>
+  </div>
+  <br> 
 
-		</div>
-	</center>
+<?php } } ?>
+
+              <hr class="my-5">
+             <main>
+                    <div class="container">
+                        <h2 class="h2 mb-2"><strong>ช่องทางการชำระเงิน</strong></h2><br>
+                      <!--Section: Products v.3-->
+                    </div>
+                   
+                  </main>
+                  
+                  <div class="card-deck" style="width: 500px;">
+                        <div class="card">
+                          <img src="img\bankk\bank4.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title"><strong>ธนาคารทหารไทย จำกัด(มหาชน)</strong></h4>
+                            <h4 class="card-title">เลขที่บัญชี : 211-2-10654-3</h4>
+							  <h5 class="card-title">ชื่อบัญชี : บจก. แมน ฟอร์ ยู 2012</h5>
+							  <h6 class="card-title">ออมทรัพย์</h6>
+                          </div>
+                          
+                        </div>
 
 
-
-
-
-
-
+                        </div>
+                      </div>
+    </main>
     
+  <!--Main layout-->
 
+<?php include_once('footer.php'); ?>	
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -124,6 +222,7 @@
     // Animations initialization
     new WOW().init();
   </script>
+
 </body>
-		
+
 </html>
