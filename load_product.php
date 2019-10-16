@@ -5,10 +5,15 @@ $connect = mysqli_connect("localhost", "root", "123456789", "e-commerce");
 
 
  session_start(); 
+	
+
+
+
 
 if($_SESSION['UserID']!=""){
-	if($_SESSION['status']=="ADMIN"){
-		 $hid = "false";
+	if($_SESSION['status']=="ADMIN" && $_SESSION['num']  == 1  ){
+		
+		 $hid = "false"; 
 	 }else $hid = "hidden";
 }else $hid = "hidden";
 	 
@@ -105,7 +110,7 @@ if(mysqli_num_rows($result) > 0)
 													font-size: 14px;">'.
                 '<div class="title">' .
                   '<h5>'. $row['Name'].'</h5>'.
-					'<img src="./productimg/'.$img.'" style="width:140px; height: 180px"/><br><br>'.
+					'<img src="./productimg/'.$img.'" style="width:180px; height: 200px"/><br><br>'.
  				 '</div>'. 
                   
 					'<div class="pop" style="margin-top: 10px;">'.

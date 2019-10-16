@@ -62,7 +62,7 @@ header('Content-Type: text/html; charset=utf-8');
   		$msg = "Failed to upload image";
   	}
 	  
-	  echo "<script>alert('เพิ่มข้อมูลสินค้าเสร็จสิ้น');window.location.href='product.php';</script>";
+	  echo "<script>alert('เพิ่มข้อมูลสินค้าเสร็จสิ้น');window.location.href='product_admin.php';</script>";
 	
   }
 
@@ -74,7 +74,7 @@ header('Content-Type: text/html; charset=utf-8');
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Product Management-จัดการสินค้า</title>
+  <title>เพิ่มข้อมูลสินค้า</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link href="css/all.css" rel="stylesheet" type="text/css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -262,7 +262,7 @@ header('Content-Type: text/html; charset=utf-8');
 					
 			<input class="btn btn-info btn-block" type="submit" name="Submit" value="Submit" />
 			
-			<input type=”button” style="width:140px;" name=”button” class="btn btn-info btn-block" value="Cancel"  onclick="window.location='product.php'"/>
+			<input type=”button” style="width:140px;" name=”button” class="btn btn-info btn-block" value="Cancel"  onclick="window.location='product_admin.php'"/>
 			
 		</form>
 	</div>

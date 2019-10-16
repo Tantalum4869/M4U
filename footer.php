@@ -1,3 +1,6 @@
+
+
+
 <!-- Footer -->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
@@ -10,8 +13,9 @@
       <!-- Grid column -->
       <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
-        <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mb-4">M4U</h5>
+        <!-- Content --> <a onDblClick="JavaScript:window.location.href='admin-login.php';" >  
+    
+        <h5 class="font-weight-bold text-uppercase mb-4">M4U</h5></a>
         <p>Here you can use rows and columns to organize your footer content.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
           esse
@@ -25,8 +29,8 @@
       <!-- Grid column -->
       <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
 
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Menu</h5>
+        <!-- Links --> 
+        <h5 class="font-weight-bold text-uppercase mb-4" >Menu</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -44,11 +48,7 @@
               <a href="#!">เกี่ยวกับเรา</a>
             </p>
           </li>
-          <li>
-            <p>
-              <a href="admin-login.php">ระบบ Admin</a>
-            </p>
-          </li>			
+         	
         </ul>
 
       </div>

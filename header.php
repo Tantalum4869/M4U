@@ -59,7 +59,7 @@
 			   <a class="nav-link" href="">ระบบการจัดการสินค้า</a>
 			</li>
 		  <div class="dropdown-menu dropdown-primary">
-			<a class="dropdown-item" href="product.php?i=5"  >จัดการสินค้า</a>
+			<a class="dropdown-item" href="product_admin.php"  >จัดการสินค้า</a>
 			<a class="dropdown-item" href="add_product.php">เพิมสินค้า</a>
       <a class="dropdown-item" href="admin-quotation.php">ใบเสนอราคา</a>
       <a class="dropdown-item" href="Temporary Delivery.php">บิลส่งของชั่วคราว</a>

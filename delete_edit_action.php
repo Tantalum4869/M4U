@@ -34,7 +34,7 @@
 	$result = mysql_query($delete)or die(mysql_error());
 	 
 	if($result) {
-		echo "<script>alert('delete Successful');window.location.href='product.php';</script>";
+		echo "<script>alert('delete Successful');window.location.href='product_admin.php';</script>";
 	}else{
 		echo "<script>alert('delete Failed');</script>";
 	}

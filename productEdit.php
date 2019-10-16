@@ -33,7 +33,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>ติดต่อเรา</title>
+  <title>แก้ไขข้อมูลสินค้า</title>
   <script>
         window.onload = function(){
             $.get("nav.php", function(data){
@@ -231,7 +231,7 @@
     <? } ?>
     <center>
     	<button class="btn btn-info" type="submit" name="Save" value="Save">SAVE</button>
-      <input type=”button” style="width:130px;" name=”button” class="btn btn-info" value="Cancel"  onclick="window.location='product.php'"/>
+      <input type=”button” style="width:130px;" name=”button” class="btn btn-info" value="Cancel"  onclick="window.location='product_admin.php'"/>
 	</center>
 </form>
 </div>

@@ -1,5 +1,5 @@
 <?php session_start(); 
-$_SESSION['num'] = 2;?><!DOCTYPE html>
+$_SESSION['num'] = 1;?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -143,7 +143,11 @@ $_SESSION['num'] = 2;?><!DOCTYPE html>
             <!--Main layout-->
             <main>
               <div class="container">
-                  <h2 class="h2 mb-2"><strong>สินค้า</strong></h2><br>
+                  <h2 class="h2 mb-2"><strong> <?php         
+                            if($_SESSION['status']=='ADMIN') { 
+                                echo 'การจัดการ';
+                            }
+                    ?>สินค้า</strong></h2><br>
                 <!--Section: Products v.3-->
                 <section class="text-center mb-4">
   
