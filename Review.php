@@ -128,7 +128,7 @@
       <!--/.Controls-->
 
     </div>
-    <!--/.Carousel Wrapper-->
+  <!--/.Carousel Wrapper-->
 
   <!--Main layout-->
   <main>
