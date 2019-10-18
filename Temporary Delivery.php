@@ -1,12 +1,11 @@
 <?php session_start(); ?><!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>ระบบออกบิลส่งของชั่วคราว</title>
-	 <meta charset="utf-8">
-	 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>ระบบออกบิลส่งของชั่วคราว</title>
+  <title>ระบบออกบิลส่งของชัวคราว</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link href="css/all.css" rel="stylesheet" type="text/css">
@@ -16,51 +15,27 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <style type="text/css">
     @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
         background: #1C2331 !important;
       }
     }
-    html,
-    body,
-    header,
-    .carousel {
-      height: 60vh;
-    }
-
-    @media (max-width: 740px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #929FBA !important;
-      }
-    }
+	  #dorp{
+		  color: #FFFFFF;
+	  }
+      #center {
+        align-items: center;
+        width:60%;
+}
   </style>
 </head>
-<body><center>
-    
-<?php include_once('header.php'); ?>
 
-    <!--Carousel Wrapper-->
+<body>
+
+<?php include_once('header.php'); ?>
+	<!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
       <!--Indicators-->
@@ -84,20 +59,63 @@
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
                 <h1 class="mb-4">
-                  <strong>ระบบออกบิลส่งของชั่วคราว</strong>
+                  <strong>ระบบออกบิลส่งของชัวคราว<br></strong>
                 </h1>
 
               </div>
               <!-- Content -->
-
             </div>
             <!-- Mask & flexbox options-->
-
           </div>
         </div>
-	</div
+        <!--/First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                  <strong>ระบบออกบิลส่งของชัวคราว<br></strong>
+                </h1>
+
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+        </div>
+        <!--/Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                  <strong>ระบบออกบิลส่งของชัวคราว<br></strong>
+                </h1>
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+        </div>
+        <!--/Third slide-->
+
+      </div>
+      <!--/.Slides-->
 	
 	<br><br><br><br>
+	
 	
 	  <!----------------------------- Form ------------------------------>
 	<form action="Teamporary Delivery Print.php" method="post">
@@ -151,10 +169,15 @@
 				<input type="reset" value="ยกเลิก" class="btn btn-info"><br><br></td>
 			</tr>
 		</center>
+		</table>
 	</form>
+
 		
-		
-		 <!-- JQuery -->
+		  <!--Main layout-->
+
+<?php include_once('footer.php'); ?>	
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
@@ -166,6 +189,10 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+  </script>
+
+
+
 
   </script>
   </body>

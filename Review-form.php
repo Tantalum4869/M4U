@@ -83,7 +83,7 @@
 						<h4 style="color: #00C2EB">โปรดแสดงความคิดเห็นเกี่ยวกับเรา</h4>
 					</div><br>
 				<!-- Form -->
-				<form class="md-form" style="color: #757575;" action="save.php" method="post"">
+				<form class="md-form" style="color: #757575;" action="save.php" method="post">
 
 					<label for="input" style="margin-top: 10px; color: black">ชื่อผู้สั่งสินค้า</label>
 					<br><input class="form-control"type="text" name="NameReview" placeholder="Enter your name here.">
