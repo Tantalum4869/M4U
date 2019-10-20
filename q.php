@@ -187,69 +187,154 @@
 <div class="container">
 
 
-    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ1()" ><b>1.วิธีการสั่งซื้อ </b> </button> 
-    <p id="q1"></p>
-    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ2()" ><b>2.จำนวนขั้นต่ำในการสั่งซื้อ</b> </button> 
-  <p id="q2"></p> 
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ3()" > <b> 3.ขอใบเสนอราคาได้ที่ไหน</b> </button> 
-  <p id="q3"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ4()" > <b>4.มีหน้าร้านไหม</b> </button> 
-  <p id="q4"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ5()" > <b>5.ชำระเงินได้ทางใดบ้าง</b> </button> 
-  <p id="q5"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ6()" > <b>6.ช่องทางการสั่งติดต่อสอบถาม</b> </button> 
-  <p id="q6"></p>
+    <button type="button" class="btn btn-info btn-lg btn-block" id="b1"onclick="showHideDiv1('divMsg')" ><b>1.วิธีการสั่งซื้อ </b> </button> 
+    <center><div id="divMsg" style=" height: 200; width: auto; text-align:left; display:none; boder" >
+    <b>Anwser 1</b>
+		
+    </div><center>
+    <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv2('divMsg2')" ><b>2.จำนวนขั้นต่ำในการสั่งซื้อ</b> </button> 
+    <div id="divMsg2"style=" height: 200; width: auto; text-align:left; display:none; boder">
+    <b>Anwser 2</b>
+		</div>
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv3('divMsg3')" > <b> 3.ขอใบเสนอราคาได้ที่ไหน</b> </button> 
+  <div id="divMsg3" style=" height: 200; width: auto; text-align:left; display:none; boder">
+  <b>Anwser 3</b>
+		</div>
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv4('divMsg4')" > <b>4.มีหน้าร้านไหม</b> </button> 
+  <div id="divMsg4" style=" height: 200; width: auto; text-align:left; display:none; boder">
+  <b>Anwser 4</b>
+		</div>
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv5('divMsg5')" > <b>5.ชำระเงินได้ทางใดบ้าง</b> </button> 
+  <div id="divMsg5" style=" height: 200; width: auto; text-align:left; display:none; boder">
+  <b>Anwser 5</b>
+		</div>
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv6('divMsg6')" > <b>6.ช่องทางการสั่งติดต่อสอบถาม</b> </button> 
+  <div id="divMsg6" style=" height: 200; width: auto; text-align:left; display:none; boder">
+  <b>Anwser 6</b>
+		</div>
 </div>
 
+<br>
+<br>
 
 
 
 
 
 
-
-<script>
-    function myQ1() {
-      document.getElementById("q1").innerHTML = "Anwser1";
-      
-    }
-    function myQ2() {
-     
-      document.getElementById("q2").innerHTML = "Anwser2";
-      
-    }
-    function myQ3() {
-      document.getElementById("q3").innerHTML = "Anwser3";
-     
-    }
-    function myQ4() {
-     
-      document.getElementById("q4").innerHTML = "Anwser4";
-      
-    }
-    function myQ5() {
-      document.getElementById("q5").innerHTML = "Anwser5";
-     
-    }
-    function myQ6() {
-     
-      document.getElementById("q6").innerHTML = "Anwser6";
-      
-    }
-   
-    </script>
-<script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("p").hide();
-  });
-  $("#show").click(function(){
-    $("p").show();
-  });
-});
-</script>
-
-
+<script type="text/javascript">
+			function showHideDiv1(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+            
+					}
+					return false;
+				}
+			}
+		</script>
+    <script type="text/javascript">
+			function showHideDiv2(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+		</script>
+    <script type="text/javascript">
+			function showHideDiv2(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+		</script>
+    <script type="text/javascript">
+			function showHideDiv2(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+		</script>
+    <script type="text/javascript">
+			function showHideDiv3(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+		</script>
+    <script type="text/javascript">
+			function showHideDiv4(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+		</script>
+    <script type="text/javascript">
+			function showHideDiv5(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+		</script>
+    <script type="text/javascript">
+			function showHideDiv6(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+		</script>
 <?php include_once('footer.php'); ?>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- SCRIPTS -->
