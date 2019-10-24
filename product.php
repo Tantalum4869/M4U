@@ -6,6 +6,11 @@ $_SESSION['num'] = 2;?><!DOCTYPE html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+  <script src="js/jquery-1.10.2.min1.js"></script>
+    <script src="js/jquery-ui1.js"></script>
+    <script src="js/bootstrap.min1.js"></script>
   <title>สินค้า</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -17,6 +22,13 @@ $_SESSION['num'] = 2;?><!DOCTYPE html>
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
   <style type="text/css">
     @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
@@ -34,6 +46,7 @@ $_SESSION['num'] = 2;?><!DOCTYPE html>
 </head>
 
 <body>
+
 
 <?php include_once('header.php');
  ?>
@@ -131,32 +144,11 @@ $_SESSION['num'] = 2;?><!DOCTYPE html>
     <!--/.Carousel Wrapper-->
 
   <!--Main layout-->
-  <main>
-  <div class="container">
-		
-        <!--Section: Main info-->
-        <section class="mt-5 wow fadeIn">
   
-          <!--Grid row-->
-          <div class="row">
-  
-            <!--Main layout-->
-            <main>
-              <div class="container">
-                  <h2 class="h2 mb-2"><strong>สินค้า</strong></h2><br>
-                <!--Section: Products v.3-->
-                <section class="text-center mb-4">
-  
-                  <!--Grid row-->
-                  <div class="row wow fadeIn">
-  
-              <center>
-                  <div style="margin-bottom: 20px;">
-                    <table>
-                  <tr>
-                   <td>
-                     
-                     <div class="input-group md-form form-sm form-1 pl-0" style="margin-left: 800px; width: 300px;margin-bottom: 5px;">
+
+
+
+  <div class="input-group md-form form-sm form-1 pl-0" style="margin-left: 1100px; width: 300px;margin-bottom: 5px;">
                       
                       <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search" id="search_text">
                     <div class="input-group-prepend" >
@@ -164,98 +156,173 @@ $_SESSION['num'] = 2;?><!DOCTYPE html>
                         aria-hidden="true"></i></span>
                       </div>
                     </div>
-                     
-                  </td>
+
+  <div class="container">
+        <div class="row">
+        	
+            <div class="col-md-2">                				
+					
+                <div class="list-group">
+					<h3>ประเภท</h3>
+                    <div style="height: 580px; overflow-y: auto; overflow-x: hidden;">
+                    <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="alls" id="0" onclick="myFunction('0')" checked  >ทั้งหมด </label></div>
+                    <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="polo" id="1" onclick="myFunction('1')"  >เสื้อโปโล </label></div>
+                        <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="hat" id="2" onclick="myFunction('2')"  >หมวก</label><br /></div>
+                        <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="apron" id="3" onclick="myFunction('3')"  >ผ้ากันเปื่อน</label><br /></div>
+                        <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="jacket"  id="4" onclick="myFunction('4')" >เสื้อแจ็คเก็ต</label><br /></div>
+                        <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="pants" id="5" onclick="myFunction('5')"  >กางเกง</label><br /></div>
+                        <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="sport" id="6" onclick="myFunction('6')"  >เสื้อกีฬา</label><br /></div>
+                        <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="suits" id="7" onclick="myFunction('7')"  >ชุดสูท</label><br /></div>
+                        <div class="list-group-item checkbox">
+                       <label><input type="radio" name="a" class="common_selector brand" value="tshirt"  id="8" onclick="myFunction('8')" >เสื้อยืด</label><br /></div>
+                       <div class="list-group-item checkbox">
+                        <label><input type="radio" name="a" class="common_selector brand" value="umbrella" id="9" onclick="myFunction('9')" >ร่ม</label></div>
                     
-                  </tr>
-                   </table>
-                      </div>
-                  <div class="contentblock">
-                  <section>
-                    <div class="container-fluid" >
-                          <div class="container">
+                    
+                    </div>
+                </div>
+
+			
+				
+            </div>
+            <div  class="col-md-8">
+            <center>   <section>
+                   
+                         
                       
-                          <div class="row" id="result">
+                          <div class="row filter_data" id="result">
                       </div> 
-                            </div>	
+                            
                                      
             
-                        </div>
+                       
                   
                        </div>
                     </div>
                   </div>
                 </section>
-                  
-                  </div>	  
-             </center>
-            
-            
-  
-  
-  
-                  </div>
-          
-  
-                </section>
-              
-              </div>
-            </main>
-            <!--Main layout-->
-          </div>
-          <!--Grid row-->
-        </section>
-        <!--Section: Main info-->
-  
-  </main>
-    
-  <!--Main layout-->
+           
+        </div>
+        </center>
+    </div>
+<style>
+#loading
+{
+	text-align:center; 
+	background: url('loader.gif') no-repeat center; 
+	height: 150px;
+}
+</style>
 
-<?php include_once('footer.php'); ?>	
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
-
-</body>
 <script>
-    $(document).ready(function(){
+data();
+function data(){
+load_data();
     
-     load_data();
-    
-     function load_data(query)
-     {
-      $.ajax({
-       url:"load_product.php?i=5",
-       method:"POST",
-       data:{query:query},
-       success:function(data)
-       {
-        $('#result').html(data);
-       }
-      });
-     }
-     $('#search_text').keyup(function(){
-      var search = $(this).val();
-      if(search != '')
+    function load_data(query)
+    {
+     $.ajax({
+      url:"load_product.php",
+      method:"POST",
+      data:{query:query},
+      success:function(data)
       {
-       load_data(search);
-      }
-      else
-      {
-       load_data();
+       $('#result').html(data);
       }
      });
+    }
+    $('#search_text').keyup(function(){
+     var search = $(this).val();
+     if(search != '')
+     {
+      load_data(search);
+     }
+     else
+     {
+      load_data();
+     }
+    }); }
+function myFunction(p) {
+
+  
+  function filter_data($s)
+{
+   
+    $('.filter_data').html('<div id="loading" style="" ></div>');
+    var action = 'fetch_data';
+    $.ajax({
+        url:$s,
+        method:"POST",
+        data:{action:action},
+        success:function(data){
+            $('.filter_data').html(data);
+        }
+      
     });
-    </script>
+}
+
+
+if(p==0){
+    $(document).ready(function(){
+      data();
+});
+
+   }
+   if(p==1){
+    $(document).ready(function(){
+filter_data("fetch_data.php");
+});
+
+   }
+   if(p==2){
+    $(document).ready(function(){
+      filter_data("fetch_data1.php");
+});
+   }
+   if(p==3){
+    $(document).ready(function(){
+filter_data("fetch_data2.php");
+});
+   }
+   if(p==4){
+    $(document).ready(function(){
+filter_data("fetch_data3.php");
+});
+   }if(p==5){
+    $(document).ready(function(){
+filter_data("fetch_data4.php");
+});
+   }if(p==6){
+    $(document).ready(function(){
+filter_data("fetch_data5.php");
+});
+   }if(p==7){
+    $(document).ready(function(){
+filter_data("fetch_data6.php");
+});
+   }if(p==8){
+    $(document).ready(function(){
+filter_data("fetch_data7.php");
+});
+   }
+   if(p==9){
+    $(document).ready(function(){
+filter_data("fetch_data8.php");
+});
+   }
+   }
+
+
+</script>
+
+</body>
+
 </html>

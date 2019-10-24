@@ -126,13 +126,20 @@
 		
 	}
 </script>
+<script>
+        window.onload = function(){
+            $.get("nav.php", function(data){
+                $("#navigation").html(data);
+            })
+        }
+	</script>
 </head>
 
 <body>
 
 <center>
 <div style="width: 60%;" align="left">
-<form class="border border-light p-5" name="productEdit" method="post" action="product_edit_action.php">
+<form class="border border-light p-5" name="productEdit" method="post" action="product_edit_action.php" enctype="multipart/form-data">
 <?php	while($objResult = mysql_fetch_array($objQuery)) {
 			$title=$objResult['Color'];
 			if($title=="สีดำ"){
@@ -186,13 +193,16 @@
      </center> <center> <p id="Warn" class="Warn" > </p> </center>
     <div class="input-group mb-4">
      
-        <div class="input-group-prepend">
+    <div class="input-group-prepend">
             <span class="input-group-text">เลือกรูปภาพ</span>
         </div>
         <div class="custom-file">
-            <input type="file" name="changePic" class="custom-file-input"  id="customFile" onChange="return validate(this.value)">
+            <input type="file" name="changePic" class="custom-file-input"  onChange="return validate(this.value)">
             <label class="custom-file-label" for="customFile">File Label</label>
     </div> 
+        
+        
+   
         </div>
 
     <label for="textInput">ชื่อ</label>

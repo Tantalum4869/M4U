@@ -4,8 +4,28 @@ include('conn.php');
  if(isset($_POST['Save']))
  {
 	
-	
+	$ide =$_POST['tid'];
 	$typee = $_POST['type'];
+
+	if($ide >= 8000){
+		$t = umbrella;
+	}else if($ide >= 7000){
+		$t = tshirt;
+	}else if($ide >= 6000){
+		$t = suits;
+	}else if($ide >= 5000){
+		$t = sport;
+	}else if($ide >= 4000){
+		$t = pants;
+	}else if($ide >= 3000){
+		$t = jacket;
+	}else if($ide >= 2000){
+		$t = apron;
+	}else if($ide >= 1000){
+		$t = hat;
+	}else if($ide >= 1){
+		$t = polo;
+	}
 	function intserts($g) {
 		$add =""; $del =""; 
 	    $id =$_POST['tid'];
@@ -85,9 +105,9 @@ include('conn.php');
 		   
 		  
 	
-		if(isset($_FILES['changePic']['name'])&&($_FILES['changePic']['name'])!="")
+		if($_FILES['changePic']['name']!="")
 		{
-			$target = "productimg/".basename($image);
+			$target = "productimg/".basename($images);
 			move_uploaded_file($_FILES['changePic']['tmp_name'], $target);
 			$update ="UPDATE $w SET Name='$names',Description='$dess',Color='$colors',Img='$images' WHERE ID=$ids";	
 		  }
@@ -95,47 +115,58 @@ include('conn.php');
 			$update ="UPDATE $w SET Name='$names',Description='$dess',Color='$colors' WHERE ID=$ids ";
 			}
 		$result2 = mysql_query($update)or die(mysql_error());
-		}	
+	 
+	}	
 	
 	
-	
-
 	switch ($typee) {
 		case 1: update();
-			intserts(polo); 
+			if($t != polo){
+			intserts(polo); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
 			
 			break;
 		case 2:update();
-			intserts(apron); 
-			
+			if($t != apron){
+			intserts(apron); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
+
 			break;
 		case 3:update();
-			intserts(hat); 
-			
+			if($t != hat){
+			intserts(hat); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
 			break;
 		case 4:update();
-			intserts(pants); 
-			
+			if($t != pants){
+			intserts(pants); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
 			break;	
 		case 5:update();
-			intserts(sport); 
-			
+			if($t != sport){
+			intserts(sport); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
 			break;
-		case 6:update();	
-			intserts(suits); 
-				
+		case 6: 
+			update();
+			if($t != suits){	
+			intserts(suits); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
 			break;
 		case 7:update();
-			intserts(tshirt); 
-			
+			if($t != tshirt){
+			intserts(tshirt); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
 			break;
 		case 8:update();
-			intserts(umbrella); 
-			
+			if($t != umbrella){
+			intserts(umbrella); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
 			break;
 		case 9:update();
-			intserts(jacket); 
-			
+			if($t != jacket){
+			intserts(jacket); }
+			echo "<script>alert('Update Successful');window.location.href='product_admin.php';</script>";
 			break;		
 		
 		default:

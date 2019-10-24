@@ -61,7 +61,11 @@ $_SESSION['num'] = 1;?><!DOCTYPE html>
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
                 <h1 class="mb-4">
-                  <strong>สินค้า<br></strong>PRODUCTS
+                  <strong><?php         
+                            if($_SESSION['status']=='ADMIN') { 
+                                echo 'การจัดการ';
+                            }
+                    ?>สินค้า<br></strong>PRODUCTS MANAGEMENT
                 </h1>
 
               </div>
@@ -103,7 +107,11 @@ $_SESSION['num'] = 1;?><!DOCTYPE html>
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
                 <h1 class="mb-4">
-                <strong>สินค้า<br></strong>PRODUCTS
+                <strong><?php         
+                            if($_SESSION['status']=='ADMIN') { 
+                                echo 'การจัดการ';
+                            }
+                    ?>สินค้า<br></strong>PRODUCTS
                 </h1>
               </div>
               <!-- Content -->
@@ -143,11 +151,7 @@ $_SESSION['num'] = 1;?><!DOCTYPE html>
             <!--Main layout-->
             <main>
               <div class="container">
-                  <h2 class="h2 mb-2"><strong> <?php         
-                            if($_SESSION['status']=='ADMIN') { 
-                                echo 'การจัดการ';
-                            }
-                    ?>สินค้า</strong></h2><br>
+                  <h2 class="h2 mb-2"><strong> สินค้า</strong></h2><br>
                 <!--Section: Products v.3-->
                 <section class="text-center mb-4">
   

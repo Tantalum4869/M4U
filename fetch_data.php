@@ -1,39 +1,24 @@
 <?php
 
 //fetch_data.php
-include('conn.php');
+
+include('database_connection.php');
 
 
+if($_SESSION['UserID']!=""){
+	if($_SESSION['status']=="ADMIN" && $_SESSION['num']  == 1  ){
+		
+		 $hid = "false"; 
+	 }else $hid = "hidden";
+}else $hid = "hidden";
+if(isset($_POST["action"]))
+{
 	$query = "
-		SELECT * FROM product WHERE product_status = '1'
+	 SELECT * FROM polo
+	
 	";
-	if(isset($_POST["minimum_price"], $_POST["maximum_price"]) && !empty($_POST["minimum_price"]) && !empty($_POST["maximum_price"]))
-	{
-		$query .= "
-		 AND product_price BETWEEN '".$_POST["minimum_price"]."' AND '".$_POST["maximum_price"]."'
-		";
-	}
-	if(isset($_POST["brand"]))
-	{
-		$brand_filter = implode("','", $_POST["brand"]);
-		$query .= "
-		 AND product_brand IN('".$brand_filter."')
-		";
-	}
-	if(isset($_POST["ram"]))
-	{
-		$ram_filter = implode("','", $_POST["ram"]);
-		$query .= "
-		 AND product_ram IN('".$ram_filter."')
-		";
-	}
-	if(isset($_POST["storage"]))
-	{
-		$storage_filter = implode("','", $_POST["storage"]);
-		$query .= "
-		 AND product_storage IN('".$storage_filter."')
-		";
-	}
+	
+	
 
 	$statement = $connect->prepare($query);
 	$statement->execute();
@@ -44,21 +29,79 @@ include('conn.php');
 	{
 		foreach($result as $row)
 		{
-			$output .= '
-			<div class="col-sm-4 col-lg-3 col-md-3">
-				<div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:16px; height:450px;">
-					<img src="image/'. $row['product_image'] .'" alt="" class="img-responsive" >
-					<p align="center"><strong><a href="#">'. $row['product_name'] .'</a></strong></p>
-					<h4 style="text-align:center;" class="text-danger" >'. $row['product_price'] .'</h4>
-					<p>Camera : '. $row['product_camera'].' MP<br />
-					Brand : '. $row['product_brand'] .' <br />
-					RAM : '. $row['product_ram'] .' GB<br />
-					Storage : '. $row['product_storage'] .' GB </p>
-				</div>
-
-			</div>
-			';
+			
+	 $img ="";
+	 if($row['Img']=="")
+	 {
+		 $img="Avata.png";
+	 }else
+		 $img = $row['Img'];
+  $output .= ' <div class="col-sm-4 >
+				   <div class="cardTrainer" style="position:relative;
+													max-width:270px;
+													height:410px;
+													background:;
+													border-radius:15px;
+													margin-right:50px;
+													margin-left:50px;
+													margin-bottom:30px ;
+													padding:20px 5px;
+													box-shadow:0 1px  5px;
+													font-size: 14px;">'.
+                '<div class="title">' .
+                  '<h5>'. $row['Name'].'</h5>'.
+					'<img src="./productimg/'.$img.'" style="width:180px; height: 200px"/><br><br>'.
+ 				 '</div>'. 
+                  
+					'<div class="pop" style="margin-top: 10px;">'.
+					 '<button type="button" class="btn btn-info"   data-toggle="modal" data-target="#myModal'.
+	  				$row['ID'].'"> ดูรายละเอียดเพิ่มเติม </button> '.
+					 '<br><button type="button" class="btn btn-info btn-circle btn-lg" onclick="window.location.href=\'productEdit.php?TId='.$row['ID'].' \'" id="btnEdit" '.$hid.' >
+					 <i class="far fa-edit"></i></button>'.
+					'<button type="button" class="btn btn-danger btn-circle btn-lg" onclick="window.location.href=\'delete_edit_action.php?TId='.$row['ID'].' \'" id="btndelete" '.$hid.' ><i class="fas fa-eraser"></i></button>'.
+				'</div>
+			</div>'.
+			'<div id="myModal'.$row['ID'].'" class="modal fade bd-example-modal-xl" role="dialog" >'.
+					'<div class="modal-dialog modal-xl">'.
+								'<div class="modal-content" style="width: 50%;
+								height: 50%; top :100px; " >'.
+									'<div class="modal-header">
+										<div style="padding-left:150px;font-size:20px;font-weight:bold;">ข้อมูลสินค้า<br>
+										<img src="./productimg/'. $row['Img'].'" style="width:200px;padding-top:10px;"/>
+									</div>'.
+	  									'<button type="button" class="close" data-dismiss="modal">&times;</button>'.
+									'</div>'.
+									'<div class="modal-body style =" color: blue;">'.
+										'<table border="0" >'.
+										'<tr style="padding-top:15px;  font-size: large;">'. 
+											'<td style="font-weight: bold;  font-size: large;"> ชื่อ : </td>'.
+												'<td style="font-weight: bold;  font-size: large;" >'. $row['Name'].'</td>	
+										</tr>'.
+										'<tr style="padding-top:30px; ">'.  
+											'<td style="font-weight: bold;  font-size: large;" >คำอธิบาย : </td>'.
+											 '<td style="font-weight: bold;  font-size: large;" >'.$row['Description'].'</td>
+										</tr>'.
+										''.
+										'<tr style="padding-top:30px; ">' .
+											'<td style="font-weight: bold;  font-size: large;">สี :</td>'.
+											'<td style="font-weight: bold;  font-size: large;" >'. nl2br($row['Color']).'</td>
+										</tr>'.
+										'
+										</table>'.	
+									'</div>
+								</div>
+							</div>
+						</div>'.
+		'</div>';
+					
+			
 		}
 	}
-	
+	else
+	{
+		$output = '<h3>No Data Found</h3>';
+	}
+	echo $output;
+}
+
 ?>
