@@ -1,3 +1,5 @@
+<?php require_once('Contect.html'); ?>
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
 
