@@ -187,30 +187,34 @@
 <div class="container">
 
 
-    <button type="button" class="btn btn-info btn-lg btn-block" id="b1"onclick="showHideDiv1('divMsg')" ><b>1.วิธีการสั่งซื้อ </b> </button> 
+    <button type="button" class="btn btn-info btn-lg btn-block" id="b1"onclick="showHideDiv1('divMsg')" ><b>1.ใช้เวลาผลิดนานไหม </b> </button> 
     <center><div id="divMsg" style=" height: 200; width: auto; text-align:left; display:none; boder" >
-    <b>Anwser 1</b>
+    <b>หลังจากคอนเฟิร์มแบบแล้วผลิต 15 - 30 วัน</b>
 		
     </div><center>
-    <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv2('divMsg2')" ><b>2.จำนวนขั้นต่ำในการสั่งซื้อ</b> </button> 
+    <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv2('divMsg2')" ><b>2.รับออกแบบเสื้อให้ด้วยไหม</b> </button> 
     <div id="divMsg2"style=" height: 200; width: auto; text-align:left; display:none; boder">
-    <b>Anwser 2</b>
+    <b>ทางร้านรับออกแบบเสื้อฟรี แค่ลูกค้าบอกความต้องการ</b>
 		</div>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv3('divMsg3')" > <b> 3.ขอใบเสนอราคาได้ที่ไหน</b> </button> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv3('divMsg3')" > <b> 3.ขึ้นตัวอย่างก่อนผลิตงานจริงได้หรือไม่</b> </button> 
   <div id="divMsg3" style=" height: 200; width: auto; text-align:left; display:none; boder">
-  <b>Anwser 3</b>
+  <b>เราจะขึ้นตัวอย่างให้ฟรีหลังจากคอนเฟิร์มแบบที่จะผลิต</b>
 		</div>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv4('divMsg4')" > <b>4.มีหน้าร้านไหม</b> </button> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv4('divMsg4')" > <b>4.ใช้ในการขึ้นตัวอย่างกี่วัน</b> </button> 
   <div id="divMsg4" style=" height: 200; width: auto; text-align:left; display:none; boder">
-  <b>Anwser 4</b>
+  <b>หลังจากคอนเฟิร์มแบบที่จะผลิตทางร้านจะใช้เวลา 1 สัปดาห์ในการขึ้นตัวอย่าง</b>
 		</div>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv5('divMsg5')" > <b>5.ชำระเงินได้ทางใดบ้าง</b> </button> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv5('divMsg5')" > <b>5.มีหน้าร้านไหม</b> </button> 
   <div id="divMsg5" style=" height: 200; width: auto; text-align:left; display:none; boder">
-  <b>Anwser 5</b>
+  <b>หน้าร้านของเราอยู่เยื้องกับซอย ประชาสงเคราะห์ 29 หรือเลขที่ 2316 ถนนประชาสงเคราะห์ แขวง/เขต ดินแดง กทม.</b>
 		</div>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv6('divMsg6')" > <b>6.ช่องทางการสั่งติดต่อสอบถาม</b> </button> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv5('divMsg5')" > <b>6.ชำระเงินในช่องทางใดบ้าง</b> </button> 
+  <div id="divMsg5" style=" height: 200; width: auto; text-align:left; display:none; boder">
+  <b>สามารถผ่านเลขบัญชี 211-2-10654-3 ชื่อบัญชี : บจก. แมน ฟอร์ ยู 2012 ธนาคารทหารไทย จำกัด(มหาชน)</b>
+		</div>
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="showHideDiv6('divMsg6')" > <b>7.ช่องทางการสั่งติดต่อสอบถาม</b> </button> 
   <div id="divMsg6" style=" height: 200; width: auto; text-align:left; display:none; boder">
-  <b>Anwser 6</b>
+  <b>โทร. 098 394 6229 (คุณโม) E-mail. manforu2012@gmail.com , mo.chayapha@gmail.com</b>
 		</div>
 </div>
 
